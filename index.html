@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<HTML lang="zh-TW">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="" viewport" content="width=device-width" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="needsRadio.json" />
+    <link rel="icon" href="icons/circle.svg" />
+</head>
+
+<body>
+    <div class="center">
+        <div class="center">
+            LOGO
+        </div>
+        <div class="center">
+            <a class="url" href="/needsRadio/needsRadio.html">needs RADIO</a>
+        </div>
+        <div class="center">
+            <a class="url" href="/needsRadio/starsRadio.html">stars RADIO</a>
+        </div>
+        <div class="center">
+            <a class="url" href="/needsRadio/banBanRadio.html">B&B RADIO</a>
+        </div>
+        <div class="center">
+            <a class="url" href="/needsRadio/needsTV.html">needs TV</a>
+        </div>
+    </div>
+
+    <script src="app.js" defer></script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            // Register the app's service worker
+            // Passing the filename where that worker is defined.
+            navigator.serviceWorker.register("sw.js");
+        }
+    </script>
+</body>
+
+</HTML>

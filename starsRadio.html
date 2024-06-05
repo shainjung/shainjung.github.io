@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<HTML lang="zh-TW">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="" viewport" content="width=device-width" />
+    <title>stars Radio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="needsRadio.json" />
+    <link rel="icon" href="icons/circle.svg" />
+</head>
+
+<body>
+    <iframe width="600" height="200" cellspacing="0" frameborder="0" allowfullscreen
+        src="https://crs.ccdntech.com/rds/playerh7livecdn?vod280_Live/stars&cname&hls"></iframe>
+
+    <div id="gcf-simple-227" class="gCalFlow"
+        style="height:45px !important; margin-bottom: 0px !important; color: rgba(0, 0, 0, 1); font-family:   !important;">
+        <div class="gcf-header-block" style="background: rgba(153, 21, 19, 1)">
+            <div class="gcf-title-block" style="color: rgba(255, 255, 255, 1); font-size: 12px;">
+                <span class="gcf-title1">現在播出節目</span>
+            </div>
+        </div>
+        <div class="gcf-item-container-block"
+            style="height:100%; background: rgba(255, 255, 255, 1); font-size: 12px; overflow-y: visible;">
+            <div class="gcf-item-block" style="border-bottom: 1px dashed rgba(204, 204, 204, 1);">
+                <div class="gcf-item-header-block">
+                    <div class="gcf-item-title-block">
+                        <span class="gcf-item-daterange"
+                            style="text-shadow: 0 1px 0 transparent !important; font-weight: normal;"></span>&nbsp;&nbsp;
+                        <strong class="gcf-item-title"></strong>
+                        <div class="gcf-item-body-block">
+                            <span class="gcf-item-description"
+                                style="color: rgba(170, 170, 170, 1); text-shadow: 0 1px 0 transparent !important; font-size: 9px;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        jQuery('#gcf-simple-227').gCalFlow({
+            calid: '9cceb3504f44eec64d5d1069be19f014dbd39c84ac9767924eb0660421b3f505@group.calendar.google.com',
+            maxitem: 1,
+            apikey: 'AIzaSyD0vtTUjLXzH4oKCzNRDymL6E3jKBympf0',
+            auto_scroll: true,
+            mode: 'upcoming',
+            scroll_interval: 5 * 1000,
+            link_title: false,
+            link_item_title: false,
+            link_target: '_blank',
+            item_description_as_html: true,
+            no_items_html: '',
+
+
+            globalize_fmt_datetime: " yyyy'/'M'/'d' 'HH':'mm  '",
+            globalize_fmt_time: " HH':'mm  "
+
+        });
+    </script>
+
+    <script src="app.js" defer></script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            // Register the app's service worker
+            // Passing the filename where that worker is defined.
+            navigator.serviceWorker.register("sw.js");
+        }
+    </script>
+</body>
+
+</HTML>
