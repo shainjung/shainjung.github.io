@@ -1,12 +1,12 @@
 {
-    "name": "needs RADIO",
-    "short_name": "Needs",
-    "description": "Listen to needs Radio, stars Radio, Ban Ban Radio, needs TV, etc.",
-    "start_url": "/needsRadio/",
-    "theme_color": "#eeffee",
-    "background_color": "#eeffee",
-    "display": "standalone",
-    "icons": [
+  "name": "needs RADIO",
+  "short_name": "NR",
+  "description": "Listen to needs Radio, stars Radio, Ban Ban Radio, needs TV, etc.",
+  "start_url": "/index.html",
+  "theme_color": "#eeffee",
+  "background_color": "#eeffee",
+  "display": "standalone",
+  "icons": [
     {
       "src": "icons/circle.svg",
       "sizes": "72x72 96x96",
@@ -21,4 +21,4 @@
       "sizes": "512x512"
     }
   ]
-  }
+}
