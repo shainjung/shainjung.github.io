@@ -1,6 +1,6 @@
 {
   "name": "needs RADIO",
-  "short_name": "NR",
+  "short_name": "needs RADIO",
   "description": "Listen to needs Radio, stars Radio, Ban Ban Radio, needs TV, etc.",
   "start_url": "/index.html",
   "theme_color": "#eeffee",
