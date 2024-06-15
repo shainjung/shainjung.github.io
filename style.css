@@ -3,6 +3,18 @@ body {
   background-color: #efe;
 }
 
+.needs_radio_background {
+  background: linear-gradient(#d9d9d9, #dad13b)
+}
+
+.stars_radio_background {
+  background: linear-gradient(#d9d9d9, #11519c)
+}
+
+.bb_radio_background {
+  background: linear-gradient(#d9d9d9, #c4634b)
+}
+
 .center {
   margin: auto;
   width: 50%;
