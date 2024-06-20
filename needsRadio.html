@@ -10,69 +10,34 @@
     <link rel="icon" href="icons/circle.svg" />
 </head>
 
-<body class="needs_radio_background">
-    <!-- TOP BAR -->
-    <table class="center">
-        <tr>
-            <td><a class="dashed-button" href="/needsRadio.html">needs RADIO</a></td>
-            <td><a class="dashed-button" href="/starsRadio.html">stars RADIO</a></td>
-            <td><a class="dashed-button" href="/banBanRadio.html">B&B RADIO</a></td>
-            <td><a class="dashed-button" href="/needsTV.html">needs TV</a></td>
-        </tr>
-    </table>
-
-    <!-- LOGO -->
-    <div class="center">
-        <div class="dashed-button">LOGO</div>
-    </div>
-
-    <!-- CONSOLE -->
-    <div class="center">
-        <!-- KEY CARD -->
-        <img src="images/keycard_n.svg" alt="Key Card">
-
-        <!-- INFO -->
-        <div id="gcf-simple-227" class="gCalFlow"
-            style="height:45px !important; margin-bottom: 0px !important; color: rgba(0, 0, 0, 1); font-family:   !important;">
-            <div class="gcf-header-block" style="background: rgba(153, 21, 19, 1)">
-                <div class="gcf-title-block" style="color: rgba(255, 255, 255, 1); font-size: 12px;">
-                    <span class="gcf-title1">現在播出節目</span>
-                </div>
-            </div>
-            <div class="gcf-item-container-block"
-                style="height:100%; background: rgba(255, 255, 255, 1); font-size: 12px; overflow-y: visible;">
-                <div class="gcf-item-block" style="border-bottom: 1px dashed rgba(204, 204, 204, 1);">
-                    <div class="gcf-item-header-block">
-                        <div class="gcf-item-title-block">
-                            <span class="gcf-item-daterange"
-                                style="text-shadow: 0 1px 0 transparent !important; font-weight: normal;"></span>&nbsp;&nbsp;
-                            <strong class="gcf-item-title"></strong>
-                            <div class="gcf-item-body-block">
-                                <span class="gcf-item-description"
-                                    style="color: rgba(170, 170, 170, 1); text-shadow: 0 1px 0 transparent !important; font-size: 9px;"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<body>
+    <div style="width: 360px; height: 800px; position: relative">
+        <div style="width: 360px; height: 800px; left: 0px; top: 0px; position: absolute">
+          <div style="width: 360px; height: 800px; left: 0px; top: 0px; position: absolute; background: linear-gradient(0deg, white 0%, white 100%), linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, rgba(223.80, 217.82, 117.71, 0.84) 40%, rgba(223.99, 215.94, 81.09, 0.89) 64%, #DAD13B 85%)" />
+          <img style="width: 300px; height: 122px; left: 30px; top: 40px; position: absolute" src="images/logo_n.png" />
+        </div>
+        <img style="width: 267.44px; height: 210px; left: 46px; top: 222px; position: absolute" src="images/keycard_n.png" />
+        <div style="width: 360px; padding-left: 30px; padding-right: 30px; left: 0px; top: 750px; position: absolute; justify-content: 'space-between'; align-items: 'flex-start'; display: 'inline-flex'">
+          <img style="width: 40px; height: 40px" src="images/M4 1.svg" />
+          <img style="width: 40px; height: 40px" src="images/N4 1.svg" />
+          <img style="width: 40px; height: 40px" src="images/S4 1.svg" />
+          <img style="width: 40px; height: 40px" src="images/B4 1.svg" />
+        </div>
+        <div style="width: 270px; height: 33px; left: 45px; top: 440px; position: absolute; color: 'white'; font-size: 16; font-family: 'Inter'; font-weight: '700'; word-wrap: break-word">現正播放</div>
+        <div style="width: 300px; left: 30px; top: 464px; position: absolute; text-align: 'center'"><span style="color: 'white'; font-size: 16; font-family: 'Inter'; font-weight: '700'; word-wrap: break-word"><br/></span><span style="color: white; font-size: 36; font-family: 'Inter'; font-weight: '700'; word-wrap: 'break-word'">《就愛Fun音樂》</span></div>
+        <div style="width: 300px; height: 21px; left: 30px; top: 543px; position: absolute; text-align: 'center'; color: 'white'; font-size: 20; font-family: 'Inter'; font-weight: '700'; word-wrap: break-word">主持人：念偉</div>
+        <div style="width: 50px; height: 50px; left: 155px; top: 622px; position: absolute">
+          <div style="width: 50px; height: 50px; left: 0px; top: 0px; position: absolute; border: '2px white solid'"></div>
+          <div style="width: 15px; height: 20px; left: 20px; top: 15px; position: absolute; border: '2px white solid'"></div>
+        </div>
+        <!-- PLAYER -->
+         <div style="width: 270px; height: 33px; left: 125px; top: 470px; position: absolute; color: 'white'; font-size: 16; font-family: 'Inter'; font-weight: '700'; word-wrap: break-word">
+            <iframe width="100" height="60" cellspacing="0" frameborder="0" allowfullscreen=""
+            src="https://crs.ccdntech.com/rds/playerh7livecdn?vod280_Live/needs&cname&hls">
+            </iframe>
         </div>
 
-        <!-- PLAYER -->
-        <iframe width="100" height="60" cellspacing="0" frameborder="0" allowfullscreen=""
-            src="https://crs.ccdntech.com/rds/playerh7livecdn?vod280_Live/needs&cname&hls">
-        </iframe>
-    </div>
-
-    <!-- BUTTOM BAR -->
-    <table class="center">
-        <tr>
-            <td><a class="dashed-button" href="/index.html">MENU</a></td>
-            <td><a class="dashed-button" href="/news.html">今日最新</a></td>
-            <td><a class="dashed-button" href="/programList.html">節目表</a></td>
-            <td><a class="dashed-button" href="/donation.html">捐款方式</a></td>
-        </tr>
-    </table>
-
+      </div>
 
     <script type="text/javascript">
         jQuery('#gcf-simple-227').gCalFlow({
