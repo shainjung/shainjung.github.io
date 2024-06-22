@@ -1,0 +1,48 @@
+.e2011_8 { 
+	background-color:rgba(255, 255, 255, 1);
+	width:360px;
+	height:800px;
+	position:absolute;
+}.e1_24 { 
+	width:281.2572937011719px;
+	height:89px;
+	position:absolute;
+	left:39px;
+	top:200px;
+	background-image:url(images/needsmediaf_1.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}.e1_66 { 
+	width:282px;
+	height:172px;
+	position:absolute;
+	left:39px;
+	top:400px;
+}.e1_64 { 
+	width:281.71429443359375px;
+	height:58px;
+	position:absolute;
+	left:0.142852783203125px;
+	top:-1px;
+	background-image:url(images/h_2n.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}.e1_65 { 
+	width:281.71429443359375px;
+	height:58px;
+	position:absolute;
+	left:0.142852783203125px;
+	top:57px;
+	background-image:url(images/h_2s.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}.e1_63 { 
+	width:281.71429443359375px;
+	height:58px;
+	position:absolute;
+	left:0.142852783203125px;
+	top:115px;
+	background-image:url(images/h_2b.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
