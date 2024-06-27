@@ -31,9 +31,26 @@
 《就愛Fun音樂》</span><span  class="e1_90">主持人：念偉</span><div class=e1_91><div  class="ei1_91_1_10"></div><div  class="ei1_91_1_11"></div></div></div>
 
             <!-- PLAYER -->
-            <div style="width: 270px; height: 33px; left: 125px; top: 470px; position: absolute; color: 'white'; font-size: 16; font-family: 'Inter'; font-weight: '700'; word-wrap: break-word">
-              <iframe width="100" height="60" cellspacing="0" frameborder="0" allowfullscreen=""
-src="https://crs.ccdntech.com/rds/playerh7livecdn?vod280_Live/stars&cname&hls&autostart=true"></iframe>
-            </div>
+            <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
+            <video id="video" width="280px" height="100px" controls></video>
+            <script>
+              var video = document.getElementById('video');
+              var videoSrc = 'https://cdn280.ccdntech.com/live-http/_definst_/vod280_Live/stars/playlist.m3u8';
+              if (Hls.isSupported()) {
+                var hls = new Hls();
+                hls.loadSource(videoSrc);
+                hls.attachMedia(video);
+              }
+              // HLS.js is not supported on platforms that do not have Media Source
+              // Extensions (MSE) enabled.
+              //
+              // When the browser has built-in HLS support (check using `canPlayType`),
+              // we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video
+              // element through the `src` property. This is using the built-in support
+              // of the plain video element, without using HLS.js.
+              else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.src = videoSrc;
+              }
+            </script>
           </body>
           </html>
