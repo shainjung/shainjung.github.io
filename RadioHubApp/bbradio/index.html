@@ -29,30 +29,5 @@
               <a href="../bbradio/index.html"><div  class="e1_101"></div></a>
           </div><span  class="e1_102">現正播放</span><span  class="e1_103">
 《就愛Fun音樂》</span><span  class="e1_104">主持人：念偉</span><div class=e1_105><div  class="ei1_105_1_10"></div><div  class="ei1_105_1_11"></div></div></div>
-
-
-            <!-- PLAYER -->
-            <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
-            <video id="video" width="280px" height="100px" controls autoplay></video>
-            <script>
-              var video = document.getElementById('video');
-              var videoSrc = 'https://cdn280.ccdntech.com/live-http/_definst_/vod280_Live/bb/playlist.m3u8';
-              if (Hls.isSupported()) {
-                var hls = new Hls();
-                hls.loadSource(videoSrc);
-                hls.attachMedia(video);
-              }
-              // HLS.js is not supported on platforms that do not have Media Source
-              // Extensions (MSE) enabled.
-              //
-              // When the browser has built-in HLS support (check using `canPlayType`),
-              // we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video
-              // element through the `src` property. This is using the built-in support
-              // of the plain video element, without using HLS.js.
-              else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                video.src = videoSrc;
-              }
-            </script>
-
           </body>
           </html>
