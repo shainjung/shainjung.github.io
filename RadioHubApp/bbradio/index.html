@@ -47,10 +47,26 @@
     </div><span class="e1_102">現正播放</span><span class="e1_103">
       《就愛Fun音樂》</span><span class="e1_104">主持人：念偉</span>
     <div class=e1_105>
-      <div class="ei1_105_1_10"></div>
+      <div id="playPauseButton" class="ei1_105_1_10"></div>
       <div class="ei1_105_1_11"></div>
     </div>
   </div>
+
+  <script>
+    // get URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const isPlaying = urlParams.get('isPlaying');
+
+    // ge button element
+    const playPauseButton = document.getElementById('playPauseButton');
+
+    // show button by URL parameters
+    if (isPlaying === 'false') {
+      playPauseButton.innerHTML = '<a href="./index.html?isPlaying=true"><div><img src="images\\play_circle.png"/></div></a>'
+    } else {
+      playPauseButton.innerHTML = '<a href="./index.html?isPlaying=false"><div><img src="images\\pause_circle.png"/></div></a>'
+    }
+  </script>
 </body>
 
 </html>
