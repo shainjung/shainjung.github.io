@@ -1,0 +1,173 @@
+.e2013_31 {
+	width: 100vw;
+	height: 100vw;
+	left: 0vw;
+	top: 0vw;
+	position: absolute;
+}
+
+.e2013_32 {
+	width: 100vw;
+	height: 100vw;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.e2013_17 {
+	background-color: rgba(255, 255, 255, 1);
+	background-image: linear-gradient(0deg, rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 0) 0%, rgba(223.79736632108688, 217.82054543495178, 117.70852580666542, 0.8399999737739563) 39.500001072883606%, rgba(223.99243265390396, 215.94169825315475, 81.09153226017952, 0.8899999856948853) 64.49999809265137%, rgba(217.67969459295273, 209.3836149573326, 58.67502272129059, 1) 85.00000238418579%);
+	width: 100vw;
+	height: 100vw;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.e2013_28 {
+	width: 300px;
+	height: 122px;
+	position: absolute;
+	left: 30px;
+	top: 40px;
+	background-image: url(images/logo_n.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.e2013_18 {
+	width: 267.4439392089844px;
+	height: 210px;
+	position: absolute;
+	left: 46px;
+	top: 222px;
+	#background-image: url(images/keycard_n.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.e2013_19 {
+	width: 360px;
+	height: 40px;
+	position: absolute;
+	left: 0px;
+	top: 750px;
+}
+
+.e2013_20 {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 30px;
+	top: 0px;
+	background-image: url(images/m4_1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.e2013_21 {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 116.66667175292969px;
+	top: 0px;
+	background-image: url(images/n4_1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.e2013_22 {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 203.33334350585938px;
+	top: 0px;
+	background-image: url(images/s4_1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.e2013_23 {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 290px;
+	top: 0px;
+	background-image: url(images/b4_1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.e2013_24 {
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+	color: rgba(255, 255, 255, 1);
+	width: 270px;
+	height: 33px;
+	position: absolute;
+	left: 45px;
+	top: 440px;
+	font-family: Inter;
+	text-align: left;
+	font-size: 16px;
+	letter-spacing: 0;
+}
+
+.e2013_25 {
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+	color: rgba(255, 255, 255, 1);
+	width: 300px;
+	height: 69px;
+	position: absolute;
+	left: 30px;
+	top: 464px;
+	font-family: Inter;
+	text-align: center;
+	font-size: Symbol(figma.mixed)px;
+	letter-spacing: 0;
+}
+
+.e2013_26 {
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+	color: rgba(255, 255, 255, 1);
+	width: 300px;
+	height: 21px;
+	position: absolute;
+	left: 30px;
+	top: 543px;
+	font-family: Inter;
+	text-align: center;
+	font-size: 20px;
+	letter-spacing: 0;
+}
+
+.e2013_27 {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 155px;
+	top: 622px;
+}
+
+.i2013_27_1_10 {
+	border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.ei2013_27_1_10 {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.i2013_27_1_11 {
+	border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.ei2013_27_1_11 {
+	width: 15px;
+	height: 20px;
+	position: absolute;
+	left: 19.999998092651367px;
+	top: 14.999974250793457px;
+}
