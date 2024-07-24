@@ -192,7 +192,7 @@
 .top_panel {
 	width: 360px;
 	height: 40px;
-	position: absolute;
+	position: fixed;
 	left: 0px;
 	top: 0px;
 }
@@ -256,9 +256,9 @@
 .bottom_panel {
 	width: 360px;
 	height: 40px;
-	position: absolute;
+	position: fixed;
 	left: 0px;
-	top: 750px;
+	bottom: 0px;
 }
 
 .btn_news {
