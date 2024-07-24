@@ -201,7 +201,7 @@
 
 
 .top_panel {
-	width: 360px;
+	width: 100%;
 	height: 40px;
 	position: fixed;
 	left: 0px;
@@ -212,8 +212,8 @@
 	width: 40px;
 	height: 40px;
 	position: absolute;
-	left: 30px;
-	top: 0px;
+	left: 11%;
+	top: 10px;
 	background-image: url(images/n4_1.png);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -223,8 +223,8 @@
 	width: 40px;
 	height: 40px;
 	position: absolute;
-	left: 115px;
-	top: 0px;
+	left: 33%;
+	top: 10px;
 	background-image: url(images/s4_1.png);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -234,8 +234,8 @@
 	width: 40px;
 	height: 40px;
 	position: absolute;
-	left: 200px;
-	top: 0px;
+	left: 55%;
+	top: 10px;
 	background-image: url(images/b4_1.png);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -245,38 +245,38 @@
 	width: 40px;
 	height: 40px;
 	position: absolute;
-	left: 285px;
-	top: 0px;
+	left: 77%;
+	top: 10px;
 	background-image: url(images/ntv.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 
+.bottom_panel {
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+}
+
 .btn_menu {
 	width: 40px;
 	height: 40px;
 	position: absolute;
-	left: 30px;
+	left: 11%;
 	top: 0px;
 	background-image: url(images/m4_1.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.bottom_panel {
-	width: 360px;
-	height: 40px;
-	position: fixed;
-	left: 0px;
-	bottom: 0px;
-}
-
 .btn_news {
 	width: 40px;
 	height: 40px;
 	position: absolute;
-	left: 115px;
+	left: 33%;
 	top: 0px;
 	background-image: url(images/news.png);
 	background-repeat: no-repeat;
@@ -287,7 +287,7 @@
 	width: 40px;
 	height: 40px;
 	position: absolute;
-	left: 200px;
+	left: 55%;
 	top: 0px;
 	background-image: url(images/shows.png);
 	background-repeat: no-repeat;
@@ -298,7 +298,7 @@
 	width: 40px;
 	height: 40px;
 	position: absolute;
-	left: 285px;
+	left: 77%;
 	top: 0px;
 	background-image: url(images/donate.png);
 	background-repeat: no-repeat;
