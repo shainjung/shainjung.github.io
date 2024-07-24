@@ -171,3 +171,207 @@
 	left: 19.999998092651367px;
 	top: 14.999974250793457px;
 }
+
+.view {
+	width: 100vw;
+	height: 100vw;
+	left: 0vw;
+	top: 0vw;
+	position: absolute;
+}
+
+
+.background {
+	background-image: linear-gradient(0deg, rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 0) 0%, rgba(17.00000088661909, 80.94000399112701, 156.00000590085983, 1) 75.99999904632568%);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+}
+
+
+.logo {
+	width: 226px;
+	height: 147px;
+	position: absolute;
+	left: 67px;
+	top: 30px;
+	background-image: url(images/logo_s.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.keycard {
+	width: 267.4439392089844px;
+	height: 210px;
+	position: absolute;
+	left: 46px;
+	top: 222px;
+	background-image: url(images/keycard_s.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.label1 {
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+	color: rgba(255, 255, 255, 1);
+	width: 270px;
+	height: 33px;
+	position: absolute;
+	left: 45px;
+	top: 440px;
+	font-family: Inter;
+	text-align: left;
+	font-size: 16px;
+	letter-spacing: 0;
+}
+
+.showname {
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+	color: rgba(255, 255, 255, 1);
+	width: 300px;
+	height: 69px;
+	position: absolute;
+	left: 30px;
+	top: 464px;
+	font-family: Inter;
+	text-align: center;
+	font-size: Symbol(figma.mixed)px;
+	letter-spacing: 0;
+}
+
+.author {
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+	color: rgba(255, 255, 255, 1);
+	width: 300px;
+	height: 21px;
+	position: absolute;
+	left: 30px;
+	top: 543px;
+	font-family: Inter;
+	text-align: center;
+	font-size: 20px;
+	letter-spacing: 0;
+}
+
+.play_button {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 155px;
+	top: 622px;
+}
+
+
+
+.program_info {
+	width: 100vw;
+	height: 80vw;
+}
+
+
+.top_panel {
+	width: 100%;
+	height: 40px;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+}
+
+.btn_needs {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 11%;
+	top: 10px;
+	background-image: url(images/n4_1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.btn_stars {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 33%;
+	top: 10px;
+	background-image: url(images/s4_1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.btn_banban {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 55%;
+	top: 10px;
+	background-image: url(images/b4_1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.btn_needsTV {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 77%;
+	top: 10px;
+	background-image: url(images/ntv.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.bottom_panel {
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+}
+
+.btn_menu {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 11%;
+	top: 0px;
+	background-image: url(images/m4_1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.btn_news {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 33%;
+	top: 0px;
+	background-image: url(images/news.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.btn_program_list {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 55%;
+	top: 0px;
+	background-image: url(images/shows.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.btn_donate {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 77%;
+	top: 0px;
+	background-image: url(images/donate.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
