@@ -171,3 +171,125 @@
 	left: 19.999998092651367px;
 	top: 14.999974250793457px;
 }
+
+.logo {
+	width: 300px;
+	height: 122px;
+	position: absolute;
+	left: 30px;
+	top: 80px;
+	background-image: url(images/logo_n.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.program_info {
+	width: 100vw;
+	height: 80vw;
+}
+
+
+.top_panel {
+	width: 360px;
+	height: 40px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.btn_needs {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 30px;
+	top: 0px;
+	background-image: url(images/n4_1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.btn_stars {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 115px;
+	top: 0px;
+	background-image: url(images/s4_1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.btn_banban {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 200px;
+	top: 0px;
+	background-image: url(images/b4_1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.btn_needsTV {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 285px;
+	top: 0px;
+	background-image: url(images/n4_1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.btn_menu {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 30px;
+	top: 0px;
+	background-image: url(images/m4_1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bottom_panel {
+	width: 360px;
+	height: 40px;
+	position: absolute;
+	left: 0px;
+	top: 750px;
+}
+
+.btn_news {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 115px;
+	top: 0px;
+	background-image: url(images/m4_1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.btn_program_list {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 200px;
+	top: 0px;
+	background-image: url(images/m4_1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.btn_donate {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 285px;
+	top: 0px;
+	background-image: url(images/m4_1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
