@@ -172,6 +172,15 @@
 	top: 14.999974250793457px;
 }
 
+.view {
+	width: 100vw;
+	height: 100vw;
+	left: 0vw;
+	top: 0vw;
+	position: absolute;
+}
+
+
 .background {
 	background-color: rgba(255, 255, 255, 1);
 	background-image: linear-gradient(0deg, rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 0) 0%, rgba(223.79736632108688, 217.82054543495178, 117.70852580666542, 0.8399999737739563) 39.500001072883606%, rgba(223.99243265390396, 215.94169825315475, 81.09153226017952, 0.8899999856948853) 64.49999809265137%, rgba(217.67969459295273, 209.3836149573326, 58.67502272129059, 1) 85.00000238418579%);
@@ -193,6 +202,69 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+.keycard {
+	width: 267.4439392089844px;
+	height: 210px;
+	position: absolute;
+	left: 46px;
+	top: 222px;
+	background-image: url(images/keycard_n.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.label1 {
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+	color: rgba(255, 255, 255, 1);
+	width: 270px;
+	height: 33px;
+	position: absolute;
+	left: 45px;
+	top: 440px;
+	font-family: Inter;
+	text-align: left;
+	font-size: 16px;
+	letter-spacing: 0;
+}
+
+.showname {
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+	color: rgba(255, 255, 255, 1);
+	width: 300px;
+	height: 69px;
+	position: absolute;
+	left: 30px;
+	top: 464px;
+	font-family: Inter;
+	text-align: center;
+	font-size: Symbol(figma.mixed)px;
+	letter-spacing: 0;
+}
+
+.author {
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+	color: rgba(255, 255, 255, 1);
+	width: 300px;
+	height: 21px;
+	position: absolute;
+	left: 30px;
+	top: 543px;
+	font-family: Inter;
+	text-align: center;
+	font-size: 20px;
+	letter-spacing: 0;
+}
+
+.play_button {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 155px;
+	top: 622px;
+}
+
+
 
 .program_info {
 	width: 100vw;
