@@ -68,3 +68,11 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+.version {
+	font-size: 10px; /* 調整字體大小 */
+	opacity: 0.5; /* 調整文字透明度 */
+	position: absolute; /* 絕對定位 */
+	bottom: 10px; /* 距離底部的距離 */
+	right: 10px; /* 距離右側的距離 */
+  }
