@@ -15,38 +15,90 @@
 }
 
 .e2013_17 {
-	background-color: rgba(255, 255, 255, 1);
+	/*background-color: rgba(255, 255, 255, 1);
 	background-image: linear-gradient(0deg, rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 0) 0%, rgba(223.79736632108688, 217.82054543495178, 117.70852580666542, 0.8399999737739563) 39.500001072883606%, rgba(223.99243265390396, 215.94169825315475, 81.09153226017952, 0.8899999856948853) 64.49999809265137%, rgba(217.67969459295273, 209.3836149573326, 58.67502272129059, 1) 85.00000238418579%);
 	width: 100vw;
 	height: 100vw;
 	position: absolute;
 	left: 0px;
-	top: 0px;
+	top: 0px;*/
 }
 
-.e2013_28 {
-	width: 300px;
-	height: 122px;
+.t_logo {
+	width: 212px;
+	height: 67px;
+	position: absolute;
+	left: 80px;
+	top: 110px;
+	background-image: url(../images/logo.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.t_keycard {
+	width: 212;
+	height: 212px;
+	position: absolute;
+	left: 74px;
+	top: 237px;
+	background-image: url(../images/keycard.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*===================== button ==========================*/
+.t_btnFrame_top {
+	width: 360px;
+	height: 40px;
+	position: absolute;
+	left: 0px;
+	top: 32px;
+}
+
+.t_btn_needs {
+	width: 56px;
+	height: 40px;
 	position: absolute;
 	left: 30px;
-	top: 40px;
-	background-image: url(images/logo_n.png);
+	top: 0px;
+	background-image: url(../images/b_needs.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.e2013_18 {
-	width: 267.4439392089844px;
-	height: 210px;
+.t_btn_stars {
+	width: 56px;
+	height: 40px;
 	position: absolute;
-	left: 46px;
-	top: 222px;
-	#background-image: url(images/keycard_n.png);
+	left: 116.6666px;
+	top: 0px;
+	background-image: url(../images/b_stars.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.e2013_19 {
+.t_btn_bnb {
+	width: 56px;
+	height: 40px;
+	position: absolute;
+	left: 203.33334350585938px;
+	top: 0px;
+	background-image: url(../images/b_bnb.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.t_btn_tv {
+	width: 56px;
+	height: 40px;
+	position: absolute;
+	left: 290px;
+	top: 0px;
+	background-image: url(../images/b_tv.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*--------------------------------------------------*/
+.t_btnFrame_buttom {
 	width: 360px;
 	height: 40px;
 	position: absolute;
@@ -54,53 +106,58 @@
 	top: 750px;
 }
 
-.e2013_20 {
+.t_btn_menu {
 	width: 40px;
 	height: 40px;
 	position: absolute;
 	left: 30px;
 	top: 0px;
-	background-image: url(images/m4_1.png);
+	background-image: url(../images/b_menu.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
-.e2013_21 {
+.t_btn_news {
 	width: 40px;
 	height: 40px;
 	position: absolute;
-	left: 116.66667175292969px;
+	left: 116.6666px;
 	top: 0px;
-	background-image: url(images/n4_1.png);
+	background-image: url(../images/b_news.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
-.e2013_22 {
+.t_btn_list {
 	width: 40px;
 	height: 40px;
 	position: absolute;
-	left: 203.33334350585938px;
+	left: 203.333px;
 	top: 0px;
-	background-image: url(images/s4_1.png);
+	background-image: url(../images/b_list.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
-.e2013_23 {
+.t_btn_donate {
 	width: 40px;
 	height: 40px;
 	position: absolute;
 	left: 290px;
 	top: 0px;
-	background-image: url(images/b4_1.png);
+	background-image: url(../images/b_donate.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
+.t_playermedia{
+	position: absolute;
+	width: 250px;
+	height: 142px;
+	top:50%;	left:50%;
+	margin: -120px 0px 0px -125px;
+
+}
 .e2013_24 {
 	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
-	color: rgba(255, 255, 255, 1);
+	color: black;
 	width: 270px;
 	height: 33px;
 	position: absolute;
@@ -114,7 +171,7 @@
 
 .e2013_25 {
 	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
-	color: rgba(255, 255, 255, 1);
+	color: black;
 	width: 300px;
 	height: 69px;
 	position: absolute;
@@ -128,7 +185,7 @@
 
 .e2013_26 {
 	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
-	color: rgba(255, 255, 255, 1);
+	color: black;
 	width: 300px;
 	height: 21px;
 	position: absolute;

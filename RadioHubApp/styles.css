@@ -6,64 +6,65 @@
 }
 
 .e1_24 {
-	width: 281.2572937011719px;
-	height: 89px;
+	width: 212px;
+	height: 67px;
 	position: absolute;
-	left: 39px;
-	top: 200px;
-	background-image: url(images/needsmediaf_1.png);
+	left: 50%;
+	margin: 0px 0px 0px -106px;
+	top: 253px;
+	background-image: url(images/H_logo.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .e1_66 {
-	width: 282px;
+	width: 210px;
 	height: 172px;
 	position: absolute;
-	left: 39px;
-	top: 400px;
+	left: 50%; top: 380px;
+	margin: 0px 0px 0px -105px;
 }
 
-.e1_64 {
-	width: 281.71429443359375px;
-	height: 58px;
+.H_btn_needs {
+	width: 100px;
+	height: 80px;
 	position: absolute;
-	left: 0.142852783203125px;
-	top: -1px;
-	background-image: url(images/h_2n.png);
+	left: 0px;
+	top: 0px;
+	background-image: url(images/H_needs.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.e1_65 {
-	width: 281.71429443359375px;
-	height: 58px;
+.H_btn_stars {
+	width: 100px;
+	height: 80px;
 	position: absolute;
-	left: 0.142852783203125px;
-	top: 57px;
-	background-image: url(images/h_2s.png);
+	right: 0px;
+	top: 0px;
+	background-image: url(images/H_stars.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.e1_63 {
-	width: 281.71429443359375px;
-	height: 58px;
+.H_btn_bnb {
+	width: 100px;
+	height: 80px;
 	position: absolute;
-	left: 0.142852783203125px;
-	top: 115px;
-	background-image: url(images/h_2b.png);
+	left: 0px;
+	bottom: 0px;
+	background-image: url(images/H_bnb.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.e1_631 {
-	width: 281.71429443359375px;
-	height: 58px;
+.H_btn_tv {
+	width: 100px;
+	height: 80px;
 	position: absolute;
-	left: 90.142852783203125px;
-	top: 173px;
-	background-image: url(images/ntv.png);
+	right: 0px;
+	bottom: 0px;
+	background-image: url(images/H_TV.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
