@@ -50,7 +50,7 @@
 .b_btnFrame_top {
 	width: 360px;
 	height: 40px;
-	position: absolute;
+	position: fixed;
 	left: 0px;
 	top: 32px;
 }
@@ -103,9 +103,9 @@
 .b_btnFrame_buttom {
 	width: 360px;
 	height: 40px;
-	position: absolute;
+	position: fixed;
 	left: 0px;
-	top: 750px;
+	bottom: 32px;
 }
 .b_btn_menu {
 	width: 40px;
