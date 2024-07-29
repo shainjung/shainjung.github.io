@@ -24,83 +24,135 @@
 	top: 0px;
 }
 
-.e1_108 {
-	width: 226px;
-	height: 147px;
+.s_logo {
+	width: 212px;
+	height: 67px;
 	position: absolute;
-	left: 67px;
-	top: 30px;
-	background-image: url(images/logo_s.png);
+	left: 80px;
+	top: 110px;
+	background-image: url(../images/logo.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.e1_82 {
-	width: 267.4439392089844px;
-	height: 210px;
+.s_keycard {
+	width: 212;
+	height: 212px;
 	position: absolute;
-	left: 46px;
-	top: 222px;
-	background-image: url(images/keycard_s.png);
+	left: 74px;
+	top: 237px;
+	background-image: url(../images/keycard.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.e1_83 {
+/*===================== button ==========================*/
+.s_btnFrame_top {
+	width: 360px;
+	height: 40px;
+	position: absolute;
+	left: 0px;
+	top: 32px;
+}
+
+.s_btn_needs {
+	width: 56px;
+	height: 40px;
+	position: absolute;
+	left: 30px;
+	top: 0px;
+	background-image: url(../images/b_needs.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.s_btn_stars {
+	width: 56px;
+	height: 40px;
+	position: absolute;
+	left: 116.6666px;
+	top: 0px;
+	background-image: url(../images/b_stars.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.s_btn_bnb {
+	width: 56px;
+	height: 40px;
+	position: absolute;
+	left: 203.33334350585938px;
+	top: 0px;
+	background-image: url(../images/b_bnb.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.s_btn_tv {
+	width: 56px;
+	height: 40px;
+	position: absolute;
+	left: 290px;
+	top: 0px;
+	background-image: url(../images/b_tv.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*--------------------------------------------------*/
+.s_btnFrame_buttom {
 	width: 360px;
 	height: 40px;
 	position: absolute;
 	left: 0px;
 	top: 750px;
 }
-
-.e1_84 {
+.s_btn_menu {
 	width: 40px;
 	height: 40px;
 	position: absolute;
 	left: 30px;
 	top: 0px;
-	background-image: url(images/m4_1.png);
+	background-image: url(../images/b_menu.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
-.e1_85 {
+.s_btn_news {
 	width: 40px;
 	height: 40px;
 	position: absolute;
-	left: 116.66667175292969px;
+	left: 116.6666px;
 	top: 0px;
-	background-image: url(images/n4_1.png);
+	background-image: url(../images/b_news.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
-.e1_86 {
+.s_btn_list {
 	width: 40px;
 	height: 40px;
 	position: absolute;
-	left: 203.33334350585938px;
+	left: 203.333px;
 	top: 0px;
-	background-image: url(images/s4_1.png);
+	background-image: url(../images/b_list.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
-.e1_87 {
+.s_btn_donate {
 	width: 40px;
 	height: 40px;
 	position: absolute;
 	left: 290px;
 	top: 0px;
-	background-image: url(images/b4_1.png);
+	background-image: url(../images/b_donate.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
+
+/*=================== text ========================*/
 .e1_88 {
 	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
-	color: rgba(255, 255, 255, 1);
+	color: rgba(0, 0, 0, 1);
 	width: 270px;
 	height: 33px;
 	position: absolute;
@@ -114,7 +166,7 @@
 
 .e1_89 {
 	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
-	color: rgba(255, 255, 255, 1);
+	color: rgba(0, 0, 0, 1);
 	width: 300px;
 	height: 69px;
 	position: absolute;
@@ -128,7 +180,7 @@
 
 .e1_90 {
 	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
-	color: rgba(255, 255, 255, 1);
+	color: rgba(0, 0, 0, 1);
 	width: 300px;
 	height: 21px;
 	position: absolute;
