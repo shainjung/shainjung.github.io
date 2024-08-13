@@ -25,6 +25,7 @@
 </head>
 
 <body>
+    <button class="lastpage" onclick="goBack()"></button>
     <div class="selection_frame">
         <div class="inside_frame">
             <div class="menu_btn">選單一</div> <!--style="display: table-cell; vertical-align: middle;"-->
@@ -37,9 +38,15 @@
     <div class="btm_frame">
         <a href="../copyright/index.html">
             <div class="m_btn_copyright"></div>
-        <a href="https://www.needsradio.org.tw/APP_PrivacyPolicy/PrivacyPolicy.html">
+        <a href="../PrivacyPolicy/PrivacyPolicy.html">
             <div class="m_btn_private"></div>
     </div>
+  
+    <script>
+      function goBack() {
+      window.history.back();
+    }
+    </script>
 </body>
 
 </html>
