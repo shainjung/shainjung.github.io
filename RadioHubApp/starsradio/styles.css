@@ -202,35 +202,11 @@
 	letter-spacing: 0;
 }
 
-.e1_91 {
+.btn_play {
 	width: 50px;
 	height: 50px;
 	position: absolute;
 	left: 50%;
   	transform: translate(-50%,0%);
 	top: 622px;
-}
-
-.i1_91_1_10 {
-	border: 2px solid rgba(255, 255, 255, 1);
-}
-
-.ei1_91_1_10 {
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-}
-
-.i1_91_1_11 {
-	border: 2px solid rgba(255, 255, 255, 1);
-}
-
-.ei1_91_1_11 {
-	width: 15px;
-	height: 20px;
-	position: absolute;
-	left: 19.999998092651367px;
-	top: 14.999974250793457px;
 }

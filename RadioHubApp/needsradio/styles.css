@@ -199,7 +199,7 @@
 	letter-spacing: 0;
 }
 /*=============== play/pause button ================*/
-.e2013_27 {
+.btn_play {
 	width: 50px;
 	height: 50px;
 	position: absolute;
@@ -208,19 +208,4 @@
 	top: 622px;
 }
 
-.i2013_27_1_10 {
-	border: 2px solid rgba(255, 255, 255, 1);
-}
-
-.ei2013_27_1_10 {
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-}
-
-.i2013_27_1_11 {
-	border: 2px solid rgba(255, 255, 255, 1);
-}
 
