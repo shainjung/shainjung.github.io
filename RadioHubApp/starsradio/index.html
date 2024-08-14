@@ -25,11 +25,10 @@
 </head>
 
 <body>
-  <div class=e2011_10>
-    <div class=e2013_33>
-      <div class="e1_111"></div>
-      <div class="s_logo"></div>
-    </div>
+
+
+    <div class="backgroundcolor"></div>
+    <div class="s_logo"></div>
     <div class="s_keycard"></div>
     <div class=s_btnFrame_top>
       <a href="../needsradio/index.html">
@@ -44,13 +43,19 @@
       <a href="../needsTV/index.html">
         <div class="s_btn_tv"></div>
       </a>   
-    </div><span class="e1_88">現正播放</span><span class="e1_89">
-      《就愛Fun音樂》</span><span class="e1_90">主持人：念偉</span>
+    </div>
+
+    <div class="text_frame">
+      <div class="tx_playnow">現正播放</div>
+      <div class="tx_showname">《就愛Fun音樂》</div>
+      <div class="tx_host">主持人：念偉</div>
+    </div>
+
     <div class=e1_91>
       <div id="playPauseButton" class="ei1_91_1_10"></div>
-      <div class="ei1_91_1_11"></div>
+      <!--<div class="ei1_91_1_11"></div>-->
     </div>
-  </div>
+
   <div class=s_btnFrame_buttom>
     <a href="../menu/index.html">
       <div class="s_btn_menu"></div>
@@ -75,9 +80,9 @@
 
     // show button by URL parameters
     if (isPlaying === 'false') {
-      playPauseButton.innerHTML = '<a href="./index.html?isPlaying=true"><div><img src="images\\play_circle.jpg"/></div></a>'
+      playPauseButton.innerHTML = '<a href="./index.html?isPlaying=true"><div><img src="images\\play_circle.png"/></div></a>'
     } else {
-      playPauseButton.innerHTML = '<a href="./index.html?isPlaying=false"><div><img src="images\\pause_circle.jpg"/></div></a>'
+      playPauseButton.innerHTML = '<a href="./index.html?isPlaying=false"><div><img src="images\\pause_circle.png"/></div></a>'
     }
     </script>
 </body>
