@@ -69,9 +69,9 @@ setInterval(updateText, 60000);
 updateText();
 
 function Refresh(day,index,page){
-    const shows=[mon,tue,wen,thu,fri,sat,sun];
-    const hosts=[h_mon,h_tue,h_wen,h_thu,h_fri,h_sat,h_sun];
-    const keycards=[k_mon,k_tue,k_wen,k_thu,k_fri,k_sat,k_sun];
+    const shows=[sun,mon,tue,wen,thu,fri,sat];
+    const hosts=[h_sun,h_mon,h_tue,h_wen,h_thu,h_fri,h_sat];
+    const keycards=[k_sun,k_mon,k_tue,k_wen,k_thu,k_fri,k_sat];
     
     const show = shows[day][index];
     const host = hosts[day][index];
