@@ -42,9 +42,10 @@
 	left: 50%;
   	transform: translate(-50%,0%);
 	top: 209px;
-	background-image: url(../images/keycard.png);
+	/*background-image: url(../images/keycard.png);*/
 	background-repeat: no-repeat;
 	background-size: cover;
+	border: 0; outline: none;
 }
 /*===================== button ==========================*/
 .n_btnFrame_top {

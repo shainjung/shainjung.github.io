@@ -4,13 +4,12 @@
   <meta charset="utf-8">
 
   <title>Stars Radio</title>
-  <meta name="viewport"
-    content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Figma htmlGenerator">
-  <meta name="author" content="htmlGenerator">
-  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
 
   <link rel="stylesheet" href="styles.css">
+  <script src="../list/showlist_s.js"></script>
+  <script src="../list/hostlist_s.js"></script>
+  <script src="../list/klist_s.js"></script>
 
   <style>
     /*
@@ -29,7 +28,7 @@
 
     <div class="backgroundcolor"></div>
     <div class="s_logo"></div>
-    <div class="s_keycard"></div>
+    <img class="s_keycard" id="display-keycard" src="../images/keycard.png">
     <div class=s_btnFrame_top>
       <a href="../needsradio/index.html">
         <div class="s_btn_needs"></div>
@@ -44,13 +43,13 @@
         <div class="s_btn_tv"></div>
       </a>   
     </div>
-
+    
     <div class="text_frame">
       <div class="tx_playnow">現正播放</div>
-      <div class="tx_showname">《就愛Fun音樂》</div>
-      <div class="tx_host">主持人：念偉</div>
+      <div class="tx_showname" id="display-show"></div>
+      <div class="tx_host" id="display-host"></div>
     </div>
-
+    <script src="../PageRefresh.js"></script>
     <div id="playPauseButton" class="btn_play"></div>
 
 
