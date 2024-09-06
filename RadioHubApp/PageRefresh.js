@@ -77,7 +77,7 @@ function Refresh(day,index,page){
     const host = hosts[day][index];
     const keycard = keycards[day][index];
 
-    var k_src="../keycard/"+ page+"/";
+    var k_src="../images/keycard/"+ page+"/";
     
     document.getElementById("display-show").innerText = '《'+ show + '》';
     if (host == "")
