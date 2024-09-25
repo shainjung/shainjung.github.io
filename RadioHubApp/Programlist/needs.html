@@ -4,14 +4,14 @@
         <meta charset="UTF-8"></meta> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style2.css"/>
-        <script src="../list/showlist_n.js"></script>
+        <script src="../list/needslist.js"></script>
         <title>needs RADIO program list</title>
 
     </head>
     <body>
         <button class="lastpage" onclick="goBack()"></button>
         <div id="WekSelect" class="scrollmenu">
-            <button class="btn active" onclick="selectMon()">週一</button>
+            <button class="btn" onclick="selectMon()">週一</button>
             <button class="btn" onclick="selectTue()">週二</button>
             <button class="btn" onclick="selectWen()">週三</button>
             <button class="btn" onclick="selectThu()">週四</button>
@@ -155,6 +155,7 @@
         </div>    
             
         <script>        
+            
             var idn;
             /*---------------寫入預設--------------*/
             for(var i=0;i<24;i++){
@@ -162,7 +163,7 @@
                     idn="text"+'0'+i.toString();
                 else
                     idn="text"+i.toString();
-                document.getElementById(idn).innerHTML = sun[i];
+                document.getElementById(idn).innerHTML = l_sun[i];
                 //console.log(idn)
             }
             
@@ -173,7 +174,7 @@
                     idn="text"+'0'+i.toString();
                 else
                     idn="text"+i.toString();
-                document.getElementById(idn).innerHTML = sun[i];
+                document.getElementById(idn).innerHTML = l_sun[i];
             }   }   
             function selectMon() {
                 idn=null;
@@ -182,7 +183,7 @@
                     idn="text"+'0'+i.toString();
                 else
                     idn="text"+i.toString();
-                document.getElementById(idn).innerHTML = mon[i];
+                document.getElementById(idn).innerHTML = l_mon[i];
             }   }
             function selectTue() {
                 idn=null;
@@ -191,7 +192,7 @@
                     idn="text"+'0'+i.toString();
                 else
                     idn="text"+i.toString();
-                document.getElementById(idn).innerHTML = tue[i];
+                document.getElementById(idn).innerHTML = l_tue[i];
             }   }
             function selectWen() {
                 idn=null;
@@ -200,7 +201,7 @@
                     idn="text"+'0'+i.toString();
                 else
                     idn="text"+i.toString();
-                document.getElementById(idn).innerHTML = wen[i];
+                document.getElementById(idn).innerHTML = l_wen[i];
             }   }
             function selectThu() {
                 idn=null;
@@ -209,7 +210,7 @@
                     idn="text"+'0'+i.toString();
                 else
                     idn="text"+i.toString();
-                document.getElementById(idn).innerHTML = thu[i];
+                document.getElementById(idn).innerHTML = l_thu[i];
             }   }
             function selectFri() {
                 idn=null;
@@ -218,7 +219,7 @@
                     idn="text"+'0'+i.toString();
                 else
                     idn="text"+i.toString();
-                document.getElementById(idn).innerHTML = fri[i];
+                document.getElementById(idn).innerHTML = l_fri[i];
             }   }
             function selectSat() {
                 idn=null;
@@ -227,7 +228,7 @@
                     idn="text"+'0'+i.toString();
                 else
                     idn="text"+i.toString();
-                document.getElementById(idn).innerHTML = sat[i];
+                document.getElementById(idn).innerHTML = l_sat[i];
             }   }
         </script>
         <script>
