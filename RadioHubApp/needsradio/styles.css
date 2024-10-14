@@ -15,7 +15,8 @@
 }*/
 
 .backgroundcolor{
-	background-image: linear-gradient(0deg, rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 0) 0%, rgba(223.79736632108688, 217.82054543495178, 117.70852580666542, 0.8399999737739563) 39.500001072883606%, rgba(223.99243265390396, 215.94169825315475, 81.09153226017952, 0.8899999856948853) 64.49999809265137%, rgba(217.67969459295273, 209.3836149573326, 58.67502272129059, 1) 85.00000238418579%);
+
+	background-color: #F7DA4A;
 	width: 100%;
 	height: 100%;
 	position: fixed;
@@ -29,19 +30,28 @@
 	position: absolute;
 	left: 50%;
   	transform: translate(-50%,0%);
-	top: 110px;
+	top: 5.5rem;
 	background-image: url(../images/logo.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
+.frame{
+	width: 270px;
+	height: 460px;
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.7);
+	left: 50%;
+	top:54%;
+  	transform: translate(-50%,-50%);
+	border-radius: 17px;
+}
 .n_keycard {
 	width: 212px;
 	height: 212px;
 	position: absolute;
 	left: 50%;
   	transform: translate(-50%,0%);
-	top: 209px;
+	top: 1.7rem;
 	/*background-image: url(../images/keycard.png);*/
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -150,11 +160,11 @@
 }
 /*=================== text ========================*/
 .text_frame{
-	width: 212px;
+	width: 80%;
 	height: 80px;
 	position: absolute;
 	left: 50%;
-	top: 500px;
+	top: 16rem;
 	transform: translate(-50%,0%);
 }
 .tx_playnow {
@@ -168,6 +178,7 @@
 	font-family: Inter;
 	text-align: left;
 	font-size: 12px;
+	font-weight: bold;
 	letter-spacing: 0;
 	background-size: cover;
 }
@@ -178,9 +189,10 @@
 	height: 69px;
 	position: absolute;
 	left: 50%;
-	top: 22px;
+	top: 1rem;
 	transform: translate(-50%,0%);
 	font-family: Inter;
+	font-weight: bold;
 	text-align: center;
 	font-size: 1.6rem;
 	letter-spacing: 0;
@@ -195,6 +207,7 @@
 	bottom: 0px;
 
 	font-family: Inter;
+	font-weight: bold;
 	text-align: right;
 	font-size: 1rem;
 	letter-spacing: 0;
@@ -206,7 +219,7 @@
 	position: absolute;
 	left: 50%;
   	transform: translate(-50%,0%);
-	top: 622px;
+	bottom: 2.5rem;
 }
 
 
