@@ -179,7 +179,7 @@
 	font-family: Inter;
 	text-align: left;
 	font-size: 12px;
-	font-weight: bold;
+	font-weight: 400;
 	letter-spacing: 0;
 	background-size: cover;
 }
@@ -193,7 +193,7 @@
 	top: 1rem;
 	transform: translate(-50%,0%);
 	font-family: Inter;
-	font-weight: bold;
+	font-weight: 400;
 	text-align: center;
 	font-size: 1.6rem;
 	letter-spacing: 0;
@@ -208,7 +208,7 @@
 	bottom: 0px;
 
 	font-family: Inter;
-	font-weight: bold;
+	font-weight: 400;
 	text-align: right;
 	font-size: 1rem;
 	letter-spacing: 0;
