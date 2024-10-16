@@ -37,12 +37,13 @@
 }
 .frame{
 	width: 270px;
-	height: 460px;
-	position: relative;
+	/*height: 70%;*/
+	position: absolute;
 	background-color: rgba(255, 255, 255, 0.7);
 	left: 50%;
-	top:54%;
-  	transform: translate(-50%,-50%);
+	top:7rem;
+	bottom: 9rem;
+  	transform: translate(-50%,0%);
 	border-radius: 17px;
 }
 .n_keycard {
@@ -219,7 +220,7 @@
 	position: absolute;
 	left: 50%;
   	transform: translate(-50%,0%);
-	bottom: 2.5rem;
+	bottom: 4rem;
 }
 
 
