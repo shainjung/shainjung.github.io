@@ -1,104 +1,153 @@
-/*.e2011_11 {
-	width: 100vw;
-	height: 100vw;
-	position: absolute;
-	left: 0vw;
-	top: 0vw;
-}
-
-.e2013_34 {
-	width: 100vw;
-	height: 100vw;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-}*/
-
-.e1_112 {
-	background-image: linear-gradient(0deg, rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 0) 0%, rgba(227.28947013616562, 184.34210747480392, 174.4999971985817, 0.44736841320991516) 28.00000011920929%, rgba(240.00000089406967, 144.00000661611557, 122.00000032782555, 1) 56.99999928474426%, rgba(196.3964894413948, 99.40273448824883, 75.15425965189934, 1) 75.49999952316284%);
+.backgroundcolor {
+	background-color: #f78f4a;
 	width: 100%;
 	height: 100%;
 	position: fixed;
 	left: 0px;
 	top: 0px;
 }
-
-.b_logo {
-	width: 212px;
-	height: 67px;
-	position: absolute;
-	left: 50%;
-  	transform: translate(-50%,0%);
-	top: 110px;
-	background-image: url(../images/logo.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.b_keycard {
-	width: 212px;
-	height: 212px;
-	position: absolute;
-	left: 50%;
-  	transform: translate(-50%,0%);
-	top: 209px;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-/*===================== button ==========================*/
 .b_btnFrame_top {
 	width: 100%;
+	max-width: 500px;
 	height: 40px;
 	position: fixed;
-	left: 0px;
+	left: 50%;
+	transform: translate(-50%,0%);
 	top: 32px;
 }
+		.b_btn_needs {
+			width: 67.2px;
+			height: 48px;
+			position: absolute;
+			left: 14%;
+			top: 0px;
+			transform: translate(-50%,0%);
+			background-image: url(../images/b_needs.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
 
-.b_btn_needs {
-	width: 56px;
-	height: 40px;
+		.b_btn_stars {
+			width: 67.2px;
+			height: 48px;
+			position: absolute;
+			left: 38%;
+			top: 0px;
+			transform: translate(-50%,0%);
+			background-image: url(../images/b_stars.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
+		.b_btn_bnb {
+			width: 67.2px;
+			height: 48px;
+			position: absolute;
+			left: 62%;
+			top: 0px;
+			transform: translate(-50%,0%);
+			background-image: url(../images/b_bnb.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
+		.b_btn_tv {
+			width: 67.2px;
+			height: 48px;
+			position: absolute;
+			left: 86%;
+			top: 0px;
+			transform: translate(-50%,0%);
+			background-image: url(../images/b_tv.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+.frame{
+	width: 300px;
+	/*height: 70%;*/
 	position: absolute;
-	left: 11%;
-	top: 0px;
-	background-image: url(../images/b_needs.png);
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-color: rgba(255, 255, 255, 0.7);
+	left: 50%;
+	top:7rem;
+	bottom: 9rem;
+		transform: translate(-50%,0%);
+	border-radius: 25px;
 }
+		.b_keycard {
+			width: 240px;
+			height: 240px;
+			position: relative;
+			margin: 10% 0 10% 0;
+			left: 50%;
+			transform: translate(-50%,0%);
+			/*top: 1.7rem;*/
+			/*background-image: url(../images/keycard.png);*/
+			background-repeat: no-repeat;
+			background-size: cover;
+			border: 0; outline: none;
+		}
+		.text_frame{
+			width: 100%;
+			height: auto;
+			position: relative;
+			left: 50%;
+			/*top: 18.5rem;*/
+			transform: translate(-50%,0%);
+		}
+				.tx_playnow {
+					box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+					color: rgba(0, 0, 0, 1);
+					width: 78px;
+					height: auto;
+					position: relative;
+					top:0px;
+					left: 10%;
+					font-family: Inter;
+					text-align: left;
+					font-size: 12px;
+					font-weight: 400;
+					letter-spacing: 0;
+					background-size: cover;
+				}
+				.tx_showname {
+					box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+					color: rgba(0, 0, 0, 1);
+					width: 100%;
+					height: auto;
+					position: relative;
+					left: 50%;
+					/*top: 1rem;*/
+					transform: translate(-50%,0%);
+					font-family: Inter;
+					font-weight: 400;
+					text-align: center;
+					font-size: 1.6rem;
+					letter-spacing: 0;
+				}
+				.tx_host {
+					box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+					color: rgba(0, 0, 0, 1);
+					width: 100%;
+					height: auto;
+					position: relative;
+					right: 10%;
+					bottom: 0px;
 
-.b_btn_stars {
-	width: 56px;
-	height: 40px;
-	position: absolute;
-	left: 33%;
-	top: 0px;
-	background-image: url(../images/b_stars.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.b_btn_bnb {
-	width: 56px;
-	height: 40px;
-	position: absolute;
-	left: 55%;
-	top: 0px;
-	background-image: url(../images/b_bnb.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.b_btn_tv {
-	width: 56px;
-	height: 40px;
-	position: absolute;
-	left: 77%;
-	top: 0px;
-	background-image: url(../images/b_tv.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
+					font-family: Inter;
+					font-weight: 400;
+					text-align: right;
+					font-size: 1rem;
+					letter-spacing: 0;
+				}
+				.btn_play {
+					width: 50px;
+					height: 50px;
+					margin-top: 15%;
+					position: relative;
+					left: 50%;
+					transform: translate(-50%,0%);
+					bottom: 10%;
+				}
 /*--------------------------------------------------*/
 .b_btnFrame_buttom {
 	width: 100%;
@@ -107,104 +156,47 @@
 	left: 0px;
 	bottom: 32px;
 }
-.b_btn_menu {
-	width: 40px;
-	height: 40px;
-	position: absolute;
-	left: 11%;
-	top: 0px;
-	background-image: url(../images/b_menu.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.b_btn_news {
-	width: 40px;
-	height: 40px;
-	position: absolute;
-	left: 33%;
-	top: 0px;
-	background-image: url(../images/b_news.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.b_btn_list {
-	width: 40px;
-	height: 40px;
-	position: absolute;
-	left: 55%;
-	top: 0px;
-	background-image: url(../images/b_list.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.b_btn_donate {
-	width: 40px;
-	height: 40px;
-	position: absolute;
-	left: 77%;
-	top: 0px;
-	background-image: url(../images/b_donate.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-/*=================== text ========================*/
-.text_frame{
-	width: 212px;
-	height: 80px;
-	position: absolute;
-	left: 50%;
-	top: 500px;
-	transform: translate(-50%,0%);
-}
-.tx_playnow {
-	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
-	color: rgba(0, 0, 0, 1);
-	width: 78px;
-	height: 33px;
-	position: relative;
-	top:0px;
-	left: 0px;
-	font-family: Inter;
-	text-align: left;
-	font-size: 12px;
-	letter-spacing: 0;
-	background-size: cover;
-}
-.tx_showname {
-	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
-	color: rgba(0, 0, 0, 1);
-	width: 360px;
-	height: 69px;
-	position: absolute;
-	left: 50%;
-	top: 22px;
-	transform: translate(-50%,0%);
-	font-family: Inter;
-	text-align: center;
-	font-size: 1.6rem;
-	letter-spacing: 0;
-}
-.tx_host {
-	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
-	color: rgba(0, 0, 0, 1);
-	width: 200px;
-	height: 21px;
-	position: absolute;
-	right: 0px;
-	bottom: 0px;
-
-	font-family: Inter;
-	text-align: right;
-	font-size: 1rem;
-	letter-spacing: 0;
-}
-
-.btn_play {
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	left: 50%;
-  	transform: translate(-50%,0%);
-	top: 622px;
-}
+		.b_btn_menu {
+			width: 50px;
+			height: 65px;
+			position: absolute;
+			left: 14%;
+			top: 0px;
+			transform: translate(-50%,0%);
+			background-image: url(../images/b_menu_2.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+		.b_btn_news {
+			width: 50px;
+			height: 65px;
+			position: absolute;
+			left: 38%;
+			top: 0px;
+			transform: translate(-50%,0%);
+			background-image: url(../images/b_news_2.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+		.b_btn_list {
+			width: 50px;
+			height: 65px;
+			position: absolute;
+			left: 62%;
+			top: 0px;
+			transform: translate(-50%,0%);
+			background-image: url(../images/b_list_2.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+		.b_btn_donate {	
+			width: 50px;
+			height: 65px;
+			position: absolute;
+			left: 86%;
+			top: 0px;
+			transform: translate(-50%,0%);
+			background-image: url(../images/b_donate_2.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
