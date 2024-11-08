@@ -34,49 +34,49 @@
 }
 
 		.n_btn_needs {
-			width: 67.2px;
-			height: 48px;
+			width: 48px;
+			height: 55px;
 			position: absolute;
 			left: 14%;
 			top: 0px;
 			transform: translate(-50%,0%);
-			background-image: url(../images/b_needs.png);
+			background-image: url(../images/b_needs_2.png);
 			background-repeat: no-repeat;
 			background-size: contain;
 		}
 
 		.n_btn_stars {
-			width: 67.2px;
-			height: 48px;
+			width: 48px;
+			height: 55px;
 			position: absolute;
 			left: 38%;
 			top: 0px;
 			transform: translate(-50%,0%);
-			background-image: url(../images/b_stars.png);
+			background-image: url(../images/b_stars_2.png);
 			background-repeat: no-repeat;
 			background-size: contain;
 		}
 
 		.n_btn_bnb {
-			width: 67.2px;
-			height: 48px;
+			width: 48px;
+			height: 55px;
 			position: absolute;
 			left: 62%;
 			top: 0px;
 			transform: translate(-50%,0%);
-			background-image: url(../images/b_bnb.png);
+			background-image: url(../images/b_bnb_2.png);
 			background-repeat: no-repeat;
 			background-size: contain;
 		}
 
 		.n_btn_tv {
-			width: 67.2px;
-			height: 48px;
+			width: 48px;
+			height: 55px;
 			position: absolute;
 			left: 86%;
 			top: 0px;
 			transform: translate(-50%,0%);
-			background-image: url(../images/b_tv.png);
+			background-image: url(../images/b_tv_2.png);
 			background-repeat: no-repeat;
 			background-size: contain;
 		}
