@@ -1,0 +1,69 @@
+.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    /*position: relative;*/
+    
+}
+/*
+.scrollmenu button {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+*/
+.btn{
+    width: 78px; padding: 10px 16px;
+    border-style: solid; border-color: black; border-width: 2px;border-radius: 8px;
+    background-color:white;
+    text-align: center;
+    font-size: 18px; font-family: "Helvetica"; font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    }
+.active, .btn:hover {
+background-color:black;
+color: white;
+}
+
+.BarFrame{
+    position: relative;
+    padding-bottom: 14px;
+    margin:20px 5px 20px 5px;
+    width: 360px;
+    /*border-style: solid; border-color: black; border-width: 2px;*/
+}
+.Time{
+    font-size: 20px;font-weight: 400;
+    /*vertical-align: middle;*/
+    position: relative; top: 5px;left: 10px;
+}
+/*
+.Line{
+    width: 2px; height: 40px; 
+    border-radius: 50%; 
+    background: black;
+    display: inline;
+}*/
+.Text{
+    font-size: 20px;font-weight: 400;
+    position: relative; top: 5px;left: 27px;
+}
+/*.body::-webkit-scrollbar{
+    display:none;
+}
+.body{
+    -ms-overflow-style: none;
+}*/
+.lastpage{
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	background-image: url(../images/last_page.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+    border: none;
+}
