@@ -12,7 +12,7 @@
 	left: 50%;
 	margin: 0px 0px 0px -106px;
 	top: 253px;
-	background-image: url(images/H_logo.png);
+	background-image: url(images/home/H_logo.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -31,7 +31,7 @@
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	background-image: url(images/H_needs.png);
+	background-image: url(images/home/H_needs.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -42,7 +42,7 @@
 	position: absolute;
 	right: 0px;
 	top: 0px;
-	background-image: url(images/H_stars.png);
+	background-image: url(images/home/H_stars.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -53,7 +53,7 @@
 	position: absolute;
 	left: 0px;
 	bottom: 0px;
-	background-image: url(images/H_bnb.png);
+	background-image: url(images/home/H_bnb.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -64,7 +64,7 @@
 	position: absolute;
 	right: 0px;
 	bottom: 0px;
-	background-image: url(images/H_TV.png);
+	background-image: url(images/home/H_TV.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
