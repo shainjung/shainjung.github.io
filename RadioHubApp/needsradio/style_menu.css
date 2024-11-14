@@ -1,33 +1,55 @@
 .selection_frame{
     position: relative;
-    top: 50%; left: 50%;
+    top: 40%; 
+    left: 50%;
     width: 270px; height: 458px; 
-    margin: -232px 0 0 -138px;
-    border-style: dashed;
-    border-radius: 17px;
+    transform: translate(-53%,-40%);
 }
 .inside_frame{
-    position: absolute;
+    position: relative;
     /*background-color: blue;*/
     top: 50%; left: 50%;
-    margin: -177px 0 0 -109px;
-}
-.menu_btn{
-    width: 212px;     height: 48px; 
-    margin: 14px 0px 14px 0px;
-    border-style: dashed;
-    border-radius: 9px;
-    text-align:center;
-    vertical-align: middle;
 
 }
-.btm_frame{
+.menu{
+    position: relative;
+    width: 212px;     
+    height: 48px; 
+    margin-top:2.5rem;
+    margin-bottom:2.5rem; 
+    left: 50%;
+    top: 0px;
+    transform: translate(-50%,0%);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.home_btn{
+    background-image: url(../images/home_A.png);
+
+}
+.about_btn{
+    background-image: url(../images/about_A.png);
+
+}
+.contant_btn{
+    background-image: url(../images/content_A.png);
+
+}
+.fb_btn{
+    background-image: url(../images/fb_A.png);
+
+}
+.eVN_btn{
+    background-image: url(../images/eVIEWNEWS_A.png);
+
+}
+.btn_frame{
     width: 270px;
     height: 30px;
-    position: absolute;
+    position: fixed;
     left:50%;
-    bottom: 60px;
-    margin: -15px 0 0 -135px;
+    transform: translate(-50%,0%);
+    bottom: 3rem;
 }
 .m_btn_copyright {
 	width: 80px;
