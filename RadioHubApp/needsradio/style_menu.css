@@ -1,9 +1,9 @@
 .selection_frame{
     position: relative;
     top: 40%; 
-    left: 50%;
+    left: 45%;
     width: 270px; height: 458px; 
-    transform: translate(-53%,-40%);
+    transform: translate(-50%,-40%);
 }
 .inside_frame{
     position: relative;
@@ -49,14 +49,14 @@
     position: fixed;
     left:50%;
     transform: translate(-50%,0%);
-    bottom: 3rem;
+    bottom: 2rem;
 }
 .m_btn_copyright {
 	width: 80px;
 	height: 30px;
 	position: absolute;
 	left: 0px; top: 0px;
-	background-image: url(../images/b_copyright.png);
+	background-image: url(../images/b_copyright_2.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -65,7 +65,7 @@
 	height: 30px;
 	position: absolute;
 	right: 0px; top: 0px;
-	background-image: url(../images/b_private.png);
+	background-image: url(../images/b_private_2.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
