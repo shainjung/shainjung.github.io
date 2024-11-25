@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Contact</title>
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+    <script>
+        function loadCSS() {
+            // 取得 URL 查詢參數 (例如 ?style=A)
+            const params = new URLSearchParams(window.location.search);
+            const style = params.get("style") || "default"; // 預設為 default.css
+
+            // 動態載入對應的 CSS
+            const link = document.createElement("link");
+            link.rel = "stylesheet";
+            link.href = `${style}.css`; // 例如 A.css, B.css
+            document.head.appendChild(link);
+        }
+        loadCSS();
+    </script>
+    <link rel="stylesheet" href="contact.css">
+
+</head>
+
+<body>
+    <button class="lastpage" onclick="goBack()"></button>
+
+    <div class="frame">
+
+        <h1>聯絡我們</h1>
+        <div>
+            <ul>
+            <li><p>電子信箱：</p>needsradio@gmail.com</li>
+            <li><p>地址：</p>新北市八里區賢三街168巷2號</li>
+            <li><p>電話</p>(02)2610-1799</li>
+            <li><p>傳真</p>(02)2610-1798</li>
+            </ul>
+        </div>
+        <h2>錯過播出怎麼辦？</h2>    
+        <div>
+            節目首播後，在一週內會有數次重播時段。重播時段請至節目表查詢（台灣時間，聽友請留心收聽時段）。若錯過當週的重播時間，仍想收聽，可寫信至電台。聽節目有什麼想法，想和主持人聯絡，可寫信至電台
+            <p>needsradio@gmail.com</p> <p>needsradio@163.com</p>
+        </div>
+
+    </div>
+    <script>
+      function goBack() {
+      window.history.back();
+    }
+    </script>
+</body>
+
+</html>

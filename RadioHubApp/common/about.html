@@ -1,0 +1,79 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>About</title>
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+    <script>
+        function loadCSS() {
+            // 取得 URL 查詢參數 (例如 ?style=A)
+            const params = new URLSearchParams(window.location.search);
+            const style = params.get("style") || "default"; // 預設為 default.css
+
+            // 動態載入對應的 CSS
+            const link = document.createElement("link");
+            link.rel = "stylesheet";
+            link.href = `${style}.css`; // 例如 A.css, B.css
+            document.head.appendChild(link);
+        }
+        loadCSS();
+    </script>
+    <link rel="stylesheet" href="about.css">
+
+</head>
+
+<body>
+    <button class="lastpage" onclick="goBack()"></button>
+
+    <div class="frame">
+        <h1>關於我們</h1>
+        <div>1、媒體中心叫needs ，很特別，是怎麼來的？
+
+            我們在創台時確立了五個服務方向如下： 　
+            <ul>
+            <li>N (News)新聞</li>
+            <li>E (Education)教育</li>
+            <li>E (Entertainment)娛樂</li>
+            <li>D (Daily)全時陪伴</li>
+            <li>S (Service)社會服務</li>
+            </ul>
+            五個字首組「needs」，而以小寫呈現是提醒我們隨時記住「媒體是社會公器，不是特權，需謙卑謹慎地服事」。</div>
+            
+            <div><p>2、組織結構為何？</p>
+            
+            needs隸屬於「中華華美媒體傳播協會」，轄下部門有三：
+            <ol type="a">
+            
+            <li><p>「needs全人關懷中心」</p> 發掘各種有需要的人群，由媒體引發社會關注，提供關懷與資訊。</li>
+            <li><p>「needs媒體傳播中心」</p> 製播各類節目，使用的媒介包括數位廣播、數位電視、劇場/舞台、會議/策展、網訊及社群等。</li>
+            <li><p>「觀點新聞編採中心」</p> 向各媒介提供社會焦點議題的深入報導。</li>
+            </ol>
+            </div>
+            
+            <div> 
+            <p>3、needs成立多久？節目特色有那些？</p>
+            
+            自2010年創立至今14年，每天每時我們以全公益丶無廣告在needs RADIO與Stars RADIO兩個頻道播放，全部製播及受訪人皆為無酬志工。此外與埔基合作共同成立B&B RADIO幫幫廣播網。至今為止合計三個頻道每周更新的節目達65個，每週七天每天24小時經網路放送全球。
+            
+            <p>needs RADIO特色：</p> 精選具永續價值的思潮，全方位覆蓋各種生活主題，呈現華人文化優勢及智慧。製播群來自於產、官、學界的精英，不僅分享畢生實學與經驗，更對全球環境，文化及社經議題提供觀察及專業建言。
+            
+            <p>Stars RADIO關注：</p> 積極深入最有需要的三類族群：第一類為特殊處遇者(如更生少年、父母親職者)，第二類為障礙患者 (憂鬱、學習障礙、過動、亞斯伯格、自閉症)，第三類為家長族群(親職教養、夫妻相處)。節目主要針對病者親屬及照顧者，在提供關懷系列節目外，廣邀產、官、學研、社福與文教機構為合作夥伴，加入製播隊伍。
+            
+            <p>B&B RADIO關懷：</p>關懷高齡者的廣播頻道(成功老化、活躍老化、失智、失能)。</div>
+            
+            
+            <div>
+                <p>4、needs人的渴望</p>
+                願經由needs志工及支持者的努力，能夠持續發展成為極有影響力的優質媒體，使全球華人閱聽者「從文化建立自信」、「用知識建立理性」，從此刻混亂的世局中找到美好未來的希望！</div>
+            
+        </div>
+    </div>
+    <script>
+      function goBack() {
+      window.history.back();
+    }
+    </script>
+</body>
+
+</html>
