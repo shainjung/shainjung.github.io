@@ -4,7 +4,20 @@
         <meta charset="UTF-8"></meta> 
         <title>隱私權保護政策</title>
         <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
-        <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+        <script>
+            function loadCSS() {
+                // 取得 URL 查詢參數 (例如 ?style=A)
+                const params = new URLSearchParams(window.location.search);
+                const style = params.get("style") || "default"; // 預設為 default.css
+    
+                // 動態載入對應的 CSS
+                const link = document.createElement("link");
+                link.rel = "stylesheet";
+                link.href = `${style}.css`; // 例如 A.css, B.css
+                document.head.appendChild(link);
+            }
+            loadCSS();
+        </script>
         <link rel="stylesheet" href="style_PP.css">
     </head>
     <body>
