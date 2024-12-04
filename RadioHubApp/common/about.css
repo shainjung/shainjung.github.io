@@ -1,17 +1,35 @@
 body{
-    margin: 0px;
+    margin: 1rem;
+}
+.Title{
+    font-weight: 600;
+}
+h4{
+    font-size: 1.1rem;
+}
+h5{
+    margin: 2rem 0rem 0rem 0rem;    
+    font-size: 1rem;
+}
+ul,ol{
+    padding-left: 30px;
+}
+.content{
+    margin-bottom:4rem ;
+    line-height: 40px; 
+    text-align: justify;
+    font-family: "思源黑體";
+    font-weight: 300;
 }
 .frame{
-    /*position: relative;*/
+    position: relative;
     max-width: 500px;
-    height: 100%;
-    margin: 1rem 1rem 2rem 1rem;
-
+    height: auto;
     padding: 1.5rem;
     left:50%;
-    /*transform: translate(-50%,0%);*/
-    /*background-color: rgba(255, 255, 255, 0.8);*/
-    border-radius: 10px;
+    transform: translate(-50%,0%);
+    /*background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;*/
 }
 .lastpage{
 	width: 40px;
