@@ -7,6 +7,9 @@
 	top: 0px;
 }
 body{
-	background: #f78f4a;
+	background: #fddec9;
 
+}
+.trapezoid,.trapezoid2,.banner{
+	background-color: #f78f4a;
 }

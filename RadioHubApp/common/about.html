@@ -20,14 +20,23 @@
         loadCSS();
     </script>
     <link rel="stylesheet" href="about.css">
-
+    <style>
+        body{
+            background: white;
+        }
+    </style>
 </head>
 
 <body>
     
+    <div class="banner" id="banner">
+        <h1 class="title">關於我們</h1>
+    </div>
+    <div class="trapezoid"></div>
+    <div class="trapezoid2"></div>
 
     <div class="frame">
-        <h1>關於我們</h1>
+
         <div class="content">
             <h4>1、媒體中心叫needs ，很特別，是怎麼來的？</h4>
             我們在創台時確立了五個服務方向如下： 
@@ -39,6 +48,7 @@
             <li>社會服務　S (Service)</li>
             </ul>
             五個字首組「needs」，而以小寫呈現是提醒我們隨時記住「媒體是社會公器，不是特權，需謙卑謹慎地服事」。</div>
+            
             
             <div class="content"><h4>2、組織結構為何？</h4>
             
@@ -70,6 +80,7 @@
         </div>
     </div>
     <button class="lastpage" onclick="goBack()"></button>
+    <script src="about.js"></script>
     <script>
       function goBack() {
       window.history.back();

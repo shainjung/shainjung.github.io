@@ -1,27 +1,64 @@
 body{
-    margin: 1rem;
+    margin: 0rem;
 }
-.Title{
-    font-weight: 600;
+.title{
+    position: relative;
+    margin-left: 2rem;
+    /* bottom: 1.1rem; */
+}
+/* Banner 初始樣式 */
+.banner {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 650px; /* 使用 max-height 控制過渡 */
+    overflow: hidden; /* 防止內容溢出 */
+    color: black;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    transition: max-height 0.3s ease, top 0.3s ease; /* 添加平滑過渡 */
+    z-index: 10;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* Banner 固定樣式 */
+.banner.fixed {
+    margin: 0;
+    position: fixed;
+    max-height: 120px; /* 固定高度的過渡效果 */
+    top: 0;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);
+}
+h1,h4,h5,ul,ol,content{
+    font-family: "思源黑體";
+}
+h1{
+    font-weight: 500;
 }
 h4{
     font-size: 1.1rem;
+    font-weight: 500;
 }
 h5{
     margin: 2rem 0rem 0rem 0rem;    
     font-size: 1rem;
+    font-weight: 500;
 }
 ul,ol{
     padding-left: 30px;
 }
 .content{
-    margin-bottom:4rem ;
+    margin: 0 1rem 10rem 1rem;
     line-height: 40px; 
     text-align: justify;
-    font-family: "思源黑體";
     font-weight: 300;
 }
+
 .frame{
+    margin-top: 650px;
     position: relative;
     max-width: 500px;
     height: auto;
@@ -31,6 +68,24 @@ ul,ol{
     /*background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;*/
 }
+
+.trapezoid {
+    position: absolute;
+    top: 80rem;
+    margin: 0;
+    width: 100%;
+    height: 54rem;
+    clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0% 100%);
+}
+.trapezoid2 {
+    position: absolute;
+    top: 181rem;
+    margin: 0;
+    width: 100%;
+    height: 48rem;
+    clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 90%);
+}
+
 .lastpage{
 	width: 40px;
 	height: 40px;
@@ -39,7 +94,7 @@ ul,ol{
 	bottom: 10px;
     border-radius: 0.3rem;
     /*background-color: transparent;*/
-	background-color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255, 0.4);
     background-image: url(../images/last_page_2.png);
 	background-repeat: no-repeat;
 	background-size: cover;
