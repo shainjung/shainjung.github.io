@@ -15,7 +15,8 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    height: 700px; /* 使用 max-height 控制過渡 */
+    height: 400px;
+    /*height: 700px; /* 使用 max-height 控制過渡 */
     overflow: hidden; /* 防止內容溢出 */
     color: black;
     display: flex;
@@ -37,19 +38,15 @@ body{
 }
 .bannerPhoto{
     position: absolute;
-    /* width: 18rem;
-    height: 24rem; */
     width: inherit;
     height: inherit;
     top: -2.5rem;
     /* right: 2rem; */
     background-image: url(../images/photo/about.png);
-    /* background-color: black; */
     background-repeat: no-repeat;
 	background-size: cover;
     background-position:center ;
     border: none;
-    /* box-shadow: 0 0 20px 50px #F7DA4A; */
     opacity: 0.8;
 
 }
@@ -81,7 +78,8 @@ ul,ol{
 }
 
 .frame{
-    margin-top: 700px;
+    margin-top: 400px;
+    /* margin-top: 700px; */
     position: relative;
     max-width: 500px;
     height: auto;
@@ -93,7 +91,7 @@ ul,ol{
 }
 
 .trapezoid,.trapezoid2,.trapezoid3 {
-    top: 0;
+    top: -20rem;
     position: absolute; 
     margin-top: -3rem;
     width: 100%;
