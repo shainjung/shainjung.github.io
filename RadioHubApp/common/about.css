@@ -55,6 +55,7 @@ ul,ol{
     line-height: 40px; 
     text-align: justify;
     font-weight: 300;
+    z-index: 1;
 }
 
 .frame{
@@ -70,21 +71,27 @@ ul,ol{
 }
 
 .trapezoid {
-    position: absolute;
-    top: 80rem;
+    position: absolute; 
     margin: 0;
     width: 100%;
-    height: 54rem;
+    height: 30rem;
     clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0% 100%);
 }
 .trapezoid2 {
     position: absolute;
-    top: 181rem;
     margin: 0;
     width: 100%;
-    height: 48rem;
+    height: 30rem;
     clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 90%);
 }
+.trapezoid3 {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 30rem;
+    clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 90%);
+}
+
 
 .lastpage{
 	width: 40px;
