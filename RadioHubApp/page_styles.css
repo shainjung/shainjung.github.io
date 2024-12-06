@@ -112,11 +112,13 @@
 					position: relative;
 					left: 50%;
 					/*top: 1rem;*/
+					white-space: nowrap; /* 禁止文字換行 */
+    				overflow: hidden;   /* 防止內容溢出 */
 					transform: translate(-50%,0%);
 					font-family: Inter;
 					font-weight: 400;
 					text-align: center;
-					font-size: 1.6rem;
+					font-size:clamp(0.5rem, 2vw, 1.6rem);
 					letter-spacing: 0;
 				}
 				.tx_host {

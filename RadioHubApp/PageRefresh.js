@@ -91,3 +91,18 @@ function Refresh(day,index,page){
     console.log(keycard)*/
 
 }
+const container = document.getElementById('display-show');
+const maxWidth = container.offsetWidth;
+
+function adjustFontSize() {
+    let fontSize = 26; // 初始字體大小 (px)
+    container.style.fontSize = fontSize + 'px';
+
+    while (container.scrollWidth > maxWidth) {
+        fontSize--; // 遞減字體大小
+        container.style.fontSize = fontSize + 'px';
+    }
+}
+
+adjustFontSize(); // 初始調整
+window.addEventListener('resize', adjustFontSize);
