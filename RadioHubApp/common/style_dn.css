@@ -26,7 +26,7 @@ p{
 .banner{
 	width: 100%;
 	height: 7rem;
-	background-color: #6c6c6c;
+	background-color: transparent;
 	line-height:7rem;
 	position: fixed;
 }
@@ -35,7 +35,7 @@ p{
 	font-size: 1.8rem;
 	font-weight: bold;
 	font-family: '微軟正黑體';
-	color: white;
+	color: black
 }
 .text{
 	/*position: relative;*/
