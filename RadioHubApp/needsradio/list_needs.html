@@ -9,7 +9,7 @@
 
     </head>
     <body>
-        <button class="lastpage" onclick="goBack()"></button>
+        
         <div id="WekSelect" class="scrollmenu">
             <button class="btn" id="btn1" onclick="updateSchedule('l_mon')">週一</button>
             <button class="btn" id="btn2" onclick="updateSchedule('l_tue')">週二</button>
@@ -140,7 +140,8 @@
             <div class="Line"></div>
             <div class="Text" id="text23"></div>
         </div>    
-    </div>    
+    </div>
+    <button class="lastpage" onclick="goBack()"></button>    
         <script>        
             function updateSchedule(day) {
                 for (let i = 0; i < 24; i++) {
