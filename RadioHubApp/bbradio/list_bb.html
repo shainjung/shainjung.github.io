@@ -3,232 +3,172 @@
     <head>
         <meta charset="UTF-8"></meta> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style_list.css"/>
+        <link rel="stylesheet" href="../common/style_list.css"/>
+        <link rel="stylesheet" href="../common/style_b.css"/>
         <script src="bblist.js"></script>
         <title>B&B RADIO program list</title>
 
     </head>
     <body>
-        <button class="lastpage" onclick="goBack()"></button>
+        
         <div id="WekSelect" class="scrollmenu">
-            <button class="btn active" onclick="selectMon()">週一</button>
-            <button class="btn" onclick="selectTue()">週二</button>
-            <button class="btn" onclick="selectWen()">週三</button>
-            <button class="btn" onclick="selectThu()">週四</button>
-            <button class="btn" onclick="selectFri()">週五</button>
-            <button class="btn" onclick="selectSat()">週六</button>
-            <button class="btn" onclick="selectSun()">週日</button>
+            <button class="btn" id="btn1" onclick="updateSchedule('l_mon')">週一</button>
+            <button class="btn" id="btn2" onclick="updateSchedule('l_tue')">週二</button>
+            <button class="btn" id="btn3" onclick="updateSchedule('l_wen')">週三</button>
+            <button class="btn" id="btn4" onclick="updateSchedule('l_thu')">週四</button>
+            <button class="btn" id="btn5" onclick="updateSchedule('l_fri')">週五</button>
+            <button class="btn" id="btn6" onclick="updateSchedule('l_sat')">週六</button>
+            <button class="btn" id="btn0" onclick="updateSchedule('l_sun')">週日</button>
         </div>
-          
-          <script>
-          // Add active class to the current button (highlight it)
-          var header = document.getElementById("WekSelect");
-          var btns = header.getElementsByClassName("btn");
-          for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function() {
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
+        <div class="frame" id="schedule">  
+        <div class="BarFrame">
+            <div class="Time" >00:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text00"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >01:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text01"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >02:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text02"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >03:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text03"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >04:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text04"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >05:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text05"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >06:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text06"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >07:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text07"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >08:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text08"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >09:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text09"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >10:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text10"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >11:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text11"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >12:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text12"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >13:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text13"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >14:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text14"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >15:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text15"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >16:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text16"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >17:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text17"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >18:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text18"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >19:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text19"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >20:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text20"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >21:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text21"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >22:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text22"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >23:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text23"></div>
+        </div>    
+    </div>
+    <button class="lastpage" onclick="goBack()"></button>    
+        <script>        
+            function updateSchedule(day) {
+                for (let i = 0; i < 24; i++) {
+                    const schedule = schedules[day];
+                    const id = `text${i.toString().padStart(2, '0')}`;
+                    document.getElementById(id).textContent =  schedule[i] || "";
+                }
+            }
+
+            var header = document.getElementById("WekSelect");
+            var btns = header.getElementsByClassName("btn");
+            
+            const today = new Date();
+            const week = today.getDay();
+            const label = ["sun", "mon", "tue", "wen", "thu", "fri", "sat"];
+            
+            updateSchedule("l_"+ label[week]);
+            document.getElementById("btn"+week).classList.add("active");
+
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function() {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
             });
           }
-          </script>
-        <!--<div style="height: 45px;"></div>-->
-        <div class="BarFrame">
-            <!--<span class="Line"></span>-->
-            <span class="Time" >00:00</span>
-            <span class="Text" id="text00"></span>
-        </div>
-        <div class="BarFrame">
-            <!--<span class="Line"></span>-->
-            <span class="Time" >01:00</span>
-            <span class="Text" id="text01"></span>
-        </div>
-        <div class="BarFrame">
-            <!--<span class="Line"></span>-->
-            <span class="Time" >02:00</span>
-            <span class="Text" id="text02"></span>
-        </div>
-        <div class="BarFrame">
-            <!--<span class="Line"></span>-->
-            <span class="Time" >03:00</span>
-            <span class="Text" id="text03"></span>
-        </div>
-        <div class="BarFrame">
-            <!--<span class="Line"></span>-->
-            <span class="Time" >04:00</span>
-            <span class="Text" id="text04"></span>
-        </div>
-        <div class="BarFrame">
-            <!--<span class="Line"></span>-->
-            <span class="Time" >05:00</span>
-            <span class="Text" id="text05"></span>
-        </div>
-        <div class="BarFrame">
-            <!--<span class="Line"></span>-->
-            <span class="Time" >06:00</span>
-            <span class="Text" id="text06"></span>
-        </div>
-        <div class="BarFrame">
-            <!--<span class="Line"></span>-->
-            <span class="Time" >07:00</span>
-            <span class="Text" id="text07"></span>
-        </div>
-        <div class="BarFrame">
-            <!--<span class="Line"></span>-->
-            <span class="Time" >08:00</span>
-            <span class="Text" id="text08"></span>
-        </div>
-        <div class="BarFrame">
-            <!--<span class="Line"></span>-->
-            <span class="Time" >09:00</span>
-            <span class="Text" id="text09"></span>
-        </div>
-        <div class="BarFrame">
-            <!--<span class="Line"></span>-->
-            <span class="Time" >10:00</span>
-            <span class="Text" id="text10"></span>
-        </div>
-        <div class="BarFrame">
-            <!--<span class="Line"></span>-->
-            <span class="Time" >11:00</span>
-            <span class="Text" id="text11"></span>
-        </div>
-        <div class="BarFrame">
-            <!--<span class="Line"></span>-->
-            <span class="Time" >12:00</span>
-            <span class="Text" id="text12"></span>
-        </div>
-        <div class="BarFrame">
-            <!--<span class="Line"></span>-->
-            <span class="Time" >13:00</span>
-            <span class="Text" id="text13"></span>
-        </div>
-        <div class="BarFrame">
-            <!--<span class="Line"></span>-->
-            <span class="Time" >14:00</span>
-            <span class="Text" id="text14"></span>
-        </div>
-        <div class="BarFrame">
-            <!--<span class="Line"></span>-->
-            <span class="Time" >15:00</span>
-            <span class="Text" id="text15"></span>
-        </div>
-        <div class="BarFrame">
-            <!--<span class="Line"></span>-->
-            <span class="Time" >16:00</span>
-            <span class="Text" id="text16"></span>
-        </div>
-        <div class="BarFrame">
-            <!--<span class="Line"></span>-->
-            <span class="Time" >17:00</span>
-            <span class="Text" id="text17"></span>
-        </div>
-        <div class="BarFrame">
-            <!--<span class="Line"></span>-->
-            <span class="Time" >18:00</span>
-            <span class="Text" id="text18"></span>
-        </div>
-        <div class="BarFrame">
-            <!--<span class="Line"></span>-->
-            <span class="Time" >19:00</span>
-            <span class="Text" id="text19"></span>
-        </div>
-        <div class="BarFrame">
-            <!--<span class="Line"></span>-->
-            <span class="Time" >20:00</span>
-            <span class="Text" id="text20"></span>
-        </div>
-        <div class="BarFrame">
-            <!--<span class="Line"></span>-->
-            <span class="Time" >21:00</span>
-            <span class="Text" id="text21"></span>
-        </div>
-        <div class="BarFrame">
-            <!--<span class="Line"></span>-->
-            <span class="Time" >22:00</span>
-            <span class="Text" id="text22"></span>
-        </div>
-        <div class="BarFrame">
-            <!--<span class="Line"></span>-->
-            <span class="Time" >23:00</span>
-            <span class="Text" id="text23"></span>
-        </div>    
-            
-        <script>        
-            var idn;
-            /*---------------寫入預設--------------*/
-            for(var i=0;i<24;i++){
-                if(i<10)
-                    idn="text"+'0'+i.toString();
-                else
-                    idn="text"+i.toString();
-                document.getElementById(idn).innerHTML = sun[i];
-                //console.log(idn)
-            }
-            
-            function selectSun() {
-                idn=null;
-                for(var i=0;i<24;i++){
-                if(i<10)
-                    idn="text"+'0'+i.toString();
-                else
-                    idn="text"+i.toString();
-                document.getElementById(idn).innerHTML = sun[i];
-            }   }   
-            function selectMon() {
-                idn=null;
-                for(var i=0;i<24;i++){
-                if(i<10)
-                    idn="text"+'0'+i.toString();
-                else
-                    idn="text"+i.toString();
-                document.getElementById(idn).innerHTML = mon[i];
-            }   }
-            function selectTue() {
-                idn=null;
-                for(var i=0;i<24;i++){
-                if(i<10)
-                    idn="text"+'0'+i.toString();
-                else
-                    idn="text"+i.toString();
-                document.getElementById(idn).innerHTML = tue[i];
-            }   }
-            function selectWen() {
-                idn=null;
-                for(var i=0;i<24;i++){
-                if(i<10)
-                    idn="text"+'0'+i.toString();
-                else
-                    idn="text"+i.toString();
-                document.getElementById(idn).innerHTML = wen[i];
-            }   }
-            function selectThu() {
-                idn=null;
-                for(var i=0;i<24;i++){
-                if(i<10)
-                    idn="text"+'0'+i.toString();
-                else
-                    idn="text"+i.toString();
-                document.getElementById(idn).innerHTML = thu[i];
-            }   }
-            function selectFri() {
-                idn=null;
-                for(var i=0;i<24;i++){
-                if(i<10)
-                    idn="text"+'0'+i.toString();
-                else
-                    idn="text"+i.toString();
-                document.getElementById(idn).innerHTML = fri[i];
-            }   }
-            function selectSat() {
-                idn=null;
-                for(var i=0;i<24;i++){
-                if(i<10)
-                    idn="text"+'0'+i.toString();
-                else
-                    idn="text"+i.toString();
-                document.getElementById(idn).innerHTML = sat[i];
-            }   }
         </script>
         <script>
             function goBack() {
