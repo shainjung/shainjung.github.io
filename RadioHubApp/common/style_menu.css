@@ -1,3 +1,12 @@
+.logo{
+    position: relative;
+    top:5rem;
+    left: 50%;
+    transform: translate(-50%,0);
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+}
 .selection_frame{
     position: relative;
     top: 40%; 
@@ -19,7 +28,6 @@
 }
 .home_btn{
     background-image: url(../images/home_A.png);
-
 }
 .about_btn{
     background-image: url(../images/about_A.png);

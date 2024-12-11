@@ -8,11 +8,16 @@
 }
 body{
 	background: #fddec9;
-
+}
+/* menu */
+.logo{
+	width: 155px;
+	height: 87px;
+	background-image:url(../images/radio/logo_b.png);
 }
 /* about */
 .trapezoid,.trapezoid2,.banner{
-	background-color: #f78f4a;
+	background-color: #fd9c5c;/*#f78f4a;*/
 }
 
 /* list */

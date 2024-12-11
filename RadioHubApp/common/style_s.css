@@ -8,7 +8,12 @@
 }
 body{
 	background: #cee3ff;
-
+}
+/* menu */
+.logo{
+	width: 134px;
+	height: 87px;
+	background-image:url(../images/radio/logo_s.png);
 }
 /* about */
 .trapezoid,.trapezoid2,.banner{
