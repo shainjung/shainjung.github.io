@@ -1,6 +1,12 @@
 body{
     margin: 0;
 }
+#btn1{
+    margin-left: 0.3rem;
+}
+#btn0{
+    margin-right: 0.3rem;
+}
 .scrollmenu {
     overflow: auto;
     white-space: nowrap;
