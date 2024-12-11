@@ -22,10 +22,10 @@
     cursor: pointer;
     outline: none;
     }
-.active, .btn:hover {
+/* .active, .btn:hover {
     background-color:black;
     color: white;
-}
+} */
 .frame{
     margin: 0.7rem;
 }
@@ -43,7 +43,6 @@
     grid-template-columns: 3rem 1rem 1fr;
     gap: 0.3rem;
     align-items:center;
-    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 7px;
 }
 .Time{

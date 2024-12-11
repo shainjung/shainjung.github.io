@@ -10,6 +10,16 @@ body{
 	background: #cee3ff;
 
 }
+/* about */
 .trapezoid,.trapezoid2,.banner{
 	background-color: #59a1ff;
+}
+
+/* list */
+.active, .btn:hover {
+    background-color:#cee3ff;
+    color: black;
+}
+.BarFrame{
+	background-color: #cee3ff;
 }
