@@ -172,6 +172,28 @@
                     current[0].className = current[0].className.replace(" active", "");
                     this.className += " active";
             });
+        
+            const Font_size1 = document.getElementsByClassName('btn');
+            const Font_size2 = document.getElementsByClassName('time');
+            const Font_size3 = document.getElementsByClassName('text');
+
+            function adjustFontSize() {
+                // 調整 'btn' 類別字體大小
+                for (let i = 0; i < Font_size1.length; i++) {
+                    Font_size1[i].style.fontSize = '18px';
+                }
+                // 調整 'time' 類別字體大小
+                for (let i = 0; i < Font_size2.length; i++) {
+                    Font_size2[i].style.fontSize = '20px';
+                }
+                // 調整 'text' 類別字體大小
+                for (let i = 0; i < Font_size3.length; i++) {
+                    Font_size3[i].style.fontSize = '20px';
+                }
+            }
+
+            adjustFontSize(); // 初始調整
+            window.addEventListener('resize', adjustFontSize);
           }
         </script>
         <script>
