@@ -11,7 +11,7 @@
 	position: absolute;
 	left: 50%;
 	margin: 0px 0px 0px -106px;
-	top: 253px;
+	top: 13rem;
 	background-image: url(images/home/needsmediaf_1.png);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -21,15 +21,15 @@
 	width: 210px;
 	height: 172px;
 	position: absolute;
-	left: 50%; top: 380px;
+	left: 52.5%; top: 20rem;
 	margin: 0px 0px 0px -105px;
 }
 
 .H_btn_needs {
-	width: 150px;
-	height: 40px;
+	width: 169px;
+	height: 45px;
 	position: relative;
-	left: 35%;
+	left: 42.5%;
 	transform: translate(-50%,0);
 	/* top: 0px; */
 	background-image: url(images/home/h_2n.png);
@@ -38,10 +38,10 @@
 }
 
 .H_btn_stars {
-	width: 150px;
-	height: 40px;
+	width: 169px;
+	height: 45px;
 	position: relative;
-	left: 48.3%;
+	left: 47.5%;
 	transform: translate(-50%,0);
 	/* top: 0px; */
 	background-image: url(images/home/h_2s.png);
@@ -50,10 +50,10 @@
 }
 
 .H_btn_bnb {
-	width: 150px;
-	height: 40px;
+	width: 169px;
+	height: 45px;
 	position: relative;
-	left: 61.7%;
+	left: 52.5%;
 	transform: translate(-50%,0);
 	/* bottom: 0px; */
 	background-image: url(images/home/h_2b.png);
@@ -62,10 +62,10 @@
 }
 
 .H_btn_tv {
-	width: 150px;
-	height: 40px;
+	width: 169px;
+	height: 45px;
 	position: relative;
-	left: 75%;
+	left: 57.5%;
 	transform: translate(-50%,0);
 	/* bottom: 0px; */
 	background-image: url(images/home/ntv.png);
@@ -74,11 +74,11 @@
 }
 
 .version {
-	font-size: 10px; /* 調整字體大小 */
+	font-size: 8px; /* 調整字體大小 */
 	opacity: 0.5; /* 調整文字透明度 */
 	position: absolute; /* 絕對定位 */
 	bottom: 5px; /* 距離底部的距離 */
-	left: 50%; /* 距離右側的距離 */
+	left: 55%; /* 距離右側的距離 */
 	transform: translate(-50%,0);
 	text-align: center;
 }
