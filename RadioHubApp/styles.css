@@ -26,53 +26,82 @@
 }
 
 .H_btn_needs {
-	width: 100px;
-	height: 80px;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	background-image: url(images/home/H_needs.png);
+	width: 150px;
+	height: 40px;
+	position: relative;
+	left: 30%;
+	transform: translate(-50%,0);
+	/* top: 0px; */
+	background-image: url(images/home/h_2n.png);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 }
 
 .H_btn_stars {
-	width: 100px;
-	height: 80px;
-	position: absolute;
-	right: 0px;
-	top: 0px;
-	background-image: url(images/home/H_stars.png);
+	width: 150px;
+	height: 40px;
+	position: relative;
+	left: 43.3%;
+	transform: translate(-50%,0);
+	/* top: 0px; */
+	background-image: url(images/home/h_2s.png);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 }
 
 .H_btn_bnb {
-	width: 100px;
-	height: 80px;
-	position: absolute;
-	left: 0px;
-	bottom: 0px;
-	background-image: url(images/home/H_bnb.png);
+	width: 150px;
+	height: 40px;
+	position: relative;
+	left: 56.7%;
+	transform: translate(-50%,0);
+	/* bottom: 0px; */
+	background-image: url(images/home/h_2b.png);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 }
 
 .H_btn_tv {
-	width: 100px;
-	height: 80px;
-	position: absolute;
-	right: 0px;
-	bottom: 0px;
-	background-image: url(images/home/H_TV.png);
+	width: 150px;
+	height: 40px;
+	position: relative;
+	left: 70%;
+	transform: translate(-50%,0);
+	/* bottom: 0px; */
+	background-image: url(images/home/ntv.png);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 }
 
 .version {
 	font-size: 10px; /* 調整字體大小 */
 	opacity: 0.5; /* 調整文字透明度 */
 	position: absolute; /* 絕對定位 */
-	bottom: 10px; /* 距離底部的距離 */
-	right: 10px; /* 距離右側的距離 */
+	bottom: 5px; /* 距離底部的距離 */
+	left: 50%; /* 距離右側的距離 */
+	transform: translate(-50%,0);
+	text-align: center;
+}
+
+.text1 {
+	width: 157px;
+	height: 20px;
+	position: absolute;
+	top: 8rem;
+	left: 50%;
+	transform: translate(-50%,0);
+	background-image: url(images/home/h_text_up.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.text2 {
+	width: 232px;
+	height: 20px;
+	position: absolute;
+	bottom: 6rem;
+	left: 50%;
+	transform: translate(-50%,0);
+	background-image: url(images/home/h_text_down.png);
+	background-repeat: no-repeat;
+	background-size: contain;
 }
