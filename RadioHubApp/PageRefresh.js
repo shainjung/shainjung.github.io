@@ -96,14 +96,16 @@ const container2 = document.getElementById('display-host');
 const container3 = document.getElementById('display-text');
 const maxHeight1 = container1.offsetHeight;
 const maxHeight2 = container2.offsetHeight;
+const maxHeight3 = container3.offsetHeight;
 
 
 function adjustFontSize() {
     let fontSize1 = 26; // 初始字體大小 (px)
     let fontSize2 = 17; // 初始字體大小 (px)
+    let fontSize3 = 12; // 初始字體大小 (px)
     container1.style.fontSize = fontSize1 + 'px';
     container2.style.fontSize = fontSize2 + 'px';
-    container3.style.fontSize = '12px';
+    container3.style.fontSize = fontSize3 + 'px';
 
     while (container1.scrollHeight > maxHeight1) {
         fontSize1--; // 遞減字體大小
@@ -112,6 +114,10 @@ function adjustFontSize() {
     while (container2.scrollHeight > maxHeight2) {
         fontSize2--; // 遞減字體大小
         container2.style.fontSize = fontSize2 + 'px';
+    }
+    while (container3.scrollHeight > maxHeight3) {
+        fontSize1--; // 遞減字體大小
+        container1.style.fontSize = fontSize3 + 'px';
     }
 }
 
