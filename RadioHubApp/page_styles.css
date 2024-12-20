@@ -92,10 +92,12 @@
 				.tx_playnow {
 					color: rgba(0, 0, 0, 1);
 					width: 78px;
-					height: auto;
+					height: 1rem;
 					position: relative;
 					top:0px;
 					left: 10%;
+					white-space: nowrap; /* 禁止文字換行 */
+    				overflow: hidden;   /* 防止內容溢出 */
 					font-family: Inter;
 					text-align: left;
 					font-size: 12px;
