@@ -105,11 +105,11 @@ function adjustFontSize() {
     container2.style.fontSize = fontSize2 + 'px';
     container3.style.fontSize = '12px';
 
-    while (container1.scrollWidth > maxWidth1 || container1.style.fontSize > fontSize1) {
+    while (container1.scrollWidth > maxWidth1) {
         fontSize1--; // 遞減字體大小
         container1.style.fontSize = fontSize1 + 'px';
     }
-    while (container2.scrollWidth > maxWidth2 || container2.style.fontSize > fontSize2) {
+    while (container2.scrollWidth > maxWidth2) {
         fontSize2--; // 遞減字體大小
         container2.style.fontSize = fontSize2 + 'px';
     }
