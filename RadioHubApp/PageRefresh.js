@@ -94,8 +94,8 @@ function Refresh(day,index,page){
 const container1 = document.getElementById('display-show');
 const container2 = document.getElementById('display-host');
 const container3 = document.getElementById('display-text');
-const maxWidth1 = container1.offsetWidth;
-const maxWidth2 = container2.offsetWidth;
+const maxHeight1 = container1.offsetHeight;
+const maxHeight2 = container2.offsetHeight;
 
 
 function adjustFontSize() {
@@ -105,11 +105,11 @@ function adjustFontSize() {
     container2.style.fontSize = fontSize2 + 'px';
     container3.style.fontSize = '12px';
 
-    while (container1.scrollWidth > maxWidth1) {
+    while (container1.scrollHeight > maxHeight1) {
         fontSize1--; // 遞減字體大小
         container1.style.fontSize = fontSize1 + 'px';
     }
-    while (container2.scrollWidth > maxWidth2) {
+    while (container2.scrollHeight > maxHeight2) {
         fontSize2--; // 遞減字體大小
         container2.style.fontSize = fontSize2 + 'px';
     }
