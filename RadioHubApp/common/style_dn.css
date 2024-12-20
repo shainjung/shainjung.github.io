@@ -17,7 +17,8 @@ p{
 	position: fixed;
 	right: 10px;
 	bottom: 10px;
-	background-color: transparent;
+	/* background-color: transparent; */
+	background-color: rgba(255, 255, 255, 0.4);
 	background-image: url(../images/last_page_2.png);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -28,7 +29,8 @@ p{
 	height: 7rem;
 	background-color: transparent;
 	line-height:7rem;
-	position: fixed;
+	/* position: fixed; */
+	position: relative;
 }
 .banner-text{
 	margin: 0px 0px 0px 2.5rem ;
@@ -39,8 +41,8 @@ p{
 }
 .text{
 	/*position: relative;*/
-	margin:1.5rem auto;
-	max-width: 450px;
+	margin:0.5rem auto;
+	/* max-width: 450px; */
 	/*left: 50%;
 	transform: translate(-50%, 0%); */
 }

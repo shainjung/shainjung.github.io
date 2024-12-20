@@ -91,16 +91,27 @@ function Refresh(day,index,page){
     console.log(keycard)*/
 
 }
-const container = document.getElementById('display-show');
-const maxWidth = container.offsetWidth;
+const container1 = document.getElementById('display-show');
+const container2 = document.getElementById('display-host');
+const container3 = document.getElementById('display-text');
+const maxWidth1 = container1.offsetWidth;
+const maxWidth2 = container2.offsetWidth;
+
 
 function adjustFontSize() {
-    let fontSize = 26; // 初始字體大小 (px)
-    container.style.fontSize = fontSize + 'px';
+    let fontSize1 = 26; // 初始字體大小 (px)
+    let fontSize2 = 17; // 初始字體大小 (px)
+    container1.style.fontSize = fontSize1 + 'px';
+    container2.style.fontSize = fontSize2 + 'px';
+    container3.style.fontSize = '12px';
 
-    while (container.scrollWidth > maxWidth) {
-        fontSize--; // 遞減字體大小
-        container.style.fontSize = fontSize + 'px';
+    while (container1.scrollWidth > maxWidth1) {
+        fontSize1--; // 遞減字體大小
+        container1.style.fontSize = fontSize1 + 'px';
+    }
+    while (container2.scrollWidth > maxWidth2) {
+        fontSize2--; // 遞減字體大小
+        container2.style.fontSize = fontSize2 + 'px';
     }
 }
 
