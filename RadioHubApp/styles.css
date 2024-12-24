@@ -6,11 +6,11 @@
 }
 
 .e1_24 {
-	width: 212px;
-	height: 67px;
+	width: 240px;
+	height: 79.5px;
 	position: absolute;
 	left: 50%;
-	margin: 0px 0px 0px -106px;
+	transform: translate(-50%,0);
 	top: 13rem;
 	background-image: url(images/home/needsmediaf_1.png);
 	background-repeat: no-repeat;
@@ -21,7 +21,7 @@
 	width: 210px;
 	height: 172px;
 	position: absolute;
-	left: 50%; top: 20rem;
+	left: 50%; top: 21rem;
 	margin: 0px 0px 0px -105px;
 }
 .H_btn_needs,.H_btn_stars,.H_btn_bnb,.H_btn_tv {
@@ -36,7 +36,6 @@
 
 .H_btn_needs {
 	background-image: url(images/home/h_3n.png);
-	background-color: #ffd400;
 }
 
 .H_btn_stars {
@@ -62,8 +61,8 @@
 }
 
 .text1 {
-	width: 157px;
-	height: 20px;
+	width: 232px;
+	height: 30px;
 	position: absolute;
 	top: 6rem;
 	left: 50%;
