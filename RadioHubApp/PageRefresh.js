@@ -121,6 +121,7 @@ function adjustFontSize() {
         container2.style.fontSize = fontSize2 + 'px';
     }
     while (container3.scrollHeight > maxHeight3) {
+        if(fontSize3 >= 12)  
             fontSize3--; // 遞減字體大小
         container3.style.fontSize = fontSize3 + 'px';
     }

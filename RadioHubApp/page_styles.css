@@ -69,6 +69,7 @@
     				overflow: hidden;   /* 防止內容溢出 */
 					font-family: Inter;
 					font-weight: 400;
+					align-content: center;
 				}
 				.tx_playnow {
 					width: 78px;
