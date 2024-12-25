@@ -105,19 +105,22 @@ function adjustFontSize() {
     let fontSize1 = 26; // 初始字體大小 (px)
     let fontSize2 = 17; // 初始字體大小 (px)
     let fontSize3 = 12; // 初始字體大小 (px)
+    let minHeight1 = 26;
+    let minHeight2 = 17;
+    let minHeight3 = 12;
     container1.style.fontSize = fontSize1 + 'px';
     container2.style.fontSize = fontSize2 + 'px';
     container3.style.fontSize = fontSize3 + 'px';
 
-    while (container1.scrollHeight > maxHeight1 || container1.scrollWidth > maxWidth1) {
+    while ((container1.scrollHeight > maxHeight1 || container1.scrollWidth > maxWidth1) && container1.scrollHeight < minHeight1) {
         fontSize1--; // 遞減字體大小
         container1.style.fontSize = fontSize1 + 'px';
     }
-    while (container2.scrollHeight > maxHeight2 || container2.scrollWidth > maxWidth2) {
+    while ((container2.scrollHeight > maxHeight2 || container2.scrollWidth > maxWidth2) && container2.scrollHeight < minHeight2) {
         fontSize2--; // 遞減字體大小
         container2.style.fontSize = fontSize2 + 'px';
     }
-    while (container3.scrollHeight > maxHeight3) {
+    while (container3.scrollHeight > maxHeight3 && container3.scrollHeight < minHeight3) {
         fontSize3--; // 遞減字體大小
         container3.style.fontSize = fontSize3 + 'px';
     }
