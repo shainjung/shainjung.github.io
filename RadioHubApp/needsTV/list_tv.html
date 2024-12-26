@@ -169,7 +169,9 @@
             
             updateSchedule("l_"+ label[week]);
             document.getElementById("btn"+week).classList.add("active");
-
+            window.onload = function () {
+                header.scrollLeft =(header.scrollWidth - header.clientWidth) * week /7; // 滾動到對應的按鈕位置
+            };
             for (var i = 0; i < btns.length; i++) {
                 btns[i].addEventListener("click", function() {
                     var current = document.getElementsByClassName("active");
