@@ -24,13 +24,17 @@ updateText();
 
 function Refresh(day,index){
     const shows=[sun,mon,tue,wen,thu,fri,sat];
-
-    
     const show = shows[day][index];
-    
     document.getElementById("display-show").innerText = '《'+ show + '》';
-
-
+    var i=0;
+    while( showInfo[i][0] != show ){
+        i++;
+    }
+    document.getElementById("display-info").innerText+=showInfo[i][1];
+    console.log(i);
+    console.log(show);
+    console.log(showInfo[i][0]);
+    
 
 }
 
