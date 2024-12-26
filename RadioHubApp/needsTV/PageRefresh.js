@@ -7,7 +7,13 @@ function updateText() {
     const hour = now.getHours(); // 取得小時（0-23）
     const min = now.getMinutes();
     let index;
-    Refresh(day,hour);
+
+    if (min > 30){
+        index=2*(hour+0.5);
+    } else{
+        index=2*hour;
+    }
+    Refresh(day,index);
 }
 
 // 每分鐘更新一次顯示文字
@@ -16,38 +22,17 @@ setInterval(updateText, 60000);
 // 頁面載入時立即更新文字
 updateText();
 
-function Refresh(day,hour){
+function Refresh(day,index){
     const shows=[sun,mon,tue,wen,thu,fri,sat];
-    const Infos=[k_sun,k_mon,k_tue,k_wen,k_thu,k_fri,k_sat];
-    
-    const show = shows[day][hour];
-    const Info = Infos[day][hour];
 
-    var info_src='../needsTV/TVIntroduction/'+Info;
+    
+    const show = shows[day][index];
     
     document.getElementById("display-show").innerText = '《'+ show + '》';
 
 
 
-    console.log(info_src);
-     /*console.log(host)
-    console.log(keycard)*/
-    fetch(info_src)
-    .then(response => {
-        if (!response.ok) {
-        throw new Error('Network response was not ok ' + response.statusText);
-        }
-        return response.text(); // 將內容解析為文字
-    })
-    .then(data => {
-        const textContent = data; // 將內容存入變數
-        console.log(textContent); // 檢視讀取的文字內容
-    })
-    .catch(error => {
-        console.error('Error fetching the file:', error);
-    });
 }
-
 
 // const container1 = document.getElementById('display-show');
 // const container2 = document.getElementById('display-host');
