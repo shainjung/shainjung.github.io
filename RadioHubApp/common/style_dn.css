@@ -1,9 +1,17 @@
 body{
 	margin:0px;
-
+}
+h1{
+    font-family: "思源黑體";
+}
+h1{
+    font-size: 1.7rem;
+    font-weight: 500;
 }
 h2{
 	margin: 0px 1rem 1rem 0rem;
+	font-size: 1.3rem;
+	font-weight: 500;
 }
 p{
 	margin: 0rem;
@@ -25,32 +33,53 @@ p{
     border: none;
 }
 .banner{
-	width: 100%;
-	height: 7rem;
-	background-color: transparent;
-	line-height:7rem;
-	/* position: fixed; */
-	position: relative;
+	margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    /*height: 700px; /* 使用 max-height 控制過渡 */
+    overflow: hidden; /* 防止內容溢出 */
+    color: black;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    transition: max-height 0.3s ease, top 0.3s ease; /* 添加平滑過渡 */
+    z-index: 10;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);
 }
+.banner.fixed {
+    margin: 0;
+    position: fixed;
+    max-height: 90px; /* 固定高度的過渡效果 */
+    top: 0;
+    background-size: cover;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
 .banner-text{
-	margin: 0px 0px 0px 2.5rem ;
-	font-size: 1.8rem;
-	font-weight: bold;
-	font-family: '微軟正黑體';
-	color: black
+	margin-left: 2rem;
+	font-size: 1.7rem;
+    font-weight: 500;
+	font-family: '思源黑體';
+	color: black;
+	position: relative;
 }
 .text{
 	/*position: relative;*/
 	margin:0.5rem auto;
+	margin-top: 450px;
 	/* max-width: 450px; */
 	/*left: 50%;
 	transform: translate(-50%, 0%); */
 }
 .text-block{
 	padding: 1rem;
-	margin: 0rem 1.2rem 0.5rem 1.2rem;
-	background-color: white;
-	border-radius: 10px;
+	margin: 0rem 1.2rem 2rem 1.2rem;
+
+	border: 1px solid #a9a9a9 ; /*!important;*/
+	border-radius: 20px;
 }
 .text-block1{
 	margin-top: 0rem;
@@ -66,7 +95,7 @@ p{
 }
 .highlight{
 	font-size: 1.1rem;
-	font-weight: bold;
+	font-weight: 600; 
 }
 .red{
 	color: red;

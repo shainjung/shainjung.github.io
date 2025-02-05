@@ -20,11 +20,16 @@
     loadCSS();
   </script>
   <link rel="stylesheet" href="style_dn.css">
+  <style>
+      body{
+          background: white;
+      }
+  </style>
 </head>
 
 <body>
-    <div class="banner">
-      <div class="banner-text">奉獻捐款方式</div>
+    <div class="banner" id="banner">
+      <h1 class="banner-text">奉獻捐款方式</h1>
     </div>
     <!-- <div style="height: 7rem;"></div>  -->
     <div class="text">
@@ -79,6 +84,22 @@
       function goBack() {
       window.history.back();
     }
+    let isBannerFixed = false;
+
+    window.addEventListener("scroll", function () {
+        const banner = document.getElementById("banner");
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition > 400 - 90 && !isBannerFixed) {
+            // 當滾動超過切換位置且尚未固定時
+            banner.classList.add("fixed");
+            isBannerFixed = true;
+        } else if (scrollPosition <= 400 - 90 && isBannerFixed) {
+            // 當滾回頂部且已經固定時
+            banner.classList.remove("fixed");
+            isBannerFixed = false;
+        }
+    });
     </script>
 </body>
 
