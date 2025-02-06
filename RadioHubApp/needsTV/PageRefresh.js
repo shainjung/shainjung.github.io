@@ -2,12 +2,12 @@
 function updateText() {
     
     const now = new Date();
-    const gmtOffset = now.getTimezoneOffset();
-    const day = now.getDay(); // 取得星期（0-6，0 是星期天）
-    const hour = now.getHours(); // 取得小時（0-23）
-    const min = now.getMinutes();
+    const taipeiTime = new Date(now.toLocaleString("en-US", { timeZone: "Asia/Taipei" }));
+    const day = taipeiTime.getDay(); // 取得星期（0-6，0 是星期天）
+    const hour = taipeiTime.getHours(); // 取得小時（0-23）
+    const min = taipeiTime.getMinutes();
+    var page=document.title.charAt(0).toLowerCase();
     let index;
-
     if (min > 30){
         index=2*(hour+0.5);
     } else{

@@ -2,10 +2,12 @@
 function updateText() {
     
     const now = new Date();
-    const gmtOffset = now.getTimezoneOffset();
-    const day = now.getDay(); // 取得星期（0-6，0 是星期天）
-    const hour = now.getHours(); // 取得小時（0-23）
-    const min = now.getMinutes();
+    // var taipeiTime = now.toLocaleString("zh-TW", { timeZone: "Asia/Taipei" });
+    const taipeiTime = new Date(now.toLocaleString("en-US", { timeZone: "Asia/Taipei" }));
+    // const uctOffset = now.getTimezoneOffset();
+    const day = taipeiTime.getDay(); // 取得星期（0-6，0 是星期天）
+    const hour = taipeiTime.getHours(); // 取得小時（0-23）
+    const min = taipeiTime.getMinutes();
     var page=document.title.charAt(0).toLowerCase();
     let index;
 
@@ -14,52 +16,9 @@ function updateText() {
     } else{
         index=2*hour;
     }
+    console.log(taipeiTime);
     Refresh(day,index,page);
-    /*
-    if (day === 0) { // 星期日
-        document.getElementById("display-show").innerText = '《'+ sun[index]+ '》';
-        if (n_sun[index]=== "")
-            document.getElementById("display-host").innerText = n_sun[index];
-        else
-            document.getElementById("display-host").innerText = "主持人："+ n_sun[index];
-    } else if (day === 1) { 
-        document.getElementById("display-show").innerText = '《'+ mon[index]+ '》';
-        if (n_sun[index]=== "")
-            document.getElementById("display-host").innerText = n_mon[index];
-        else
-            document.getElementById("display-host").innerText = "主持人："+ n_mon[index];
-    } else if (day === 2) { 
-        document.getElementById("display-show").innerText = '《'+ tue[index]+ '》';
-        if (n_sun[index]=== "")
-            document.getElementById("display-host").innerText = n_tue[index];
-        else
-            document.getElementById("display-host").innerText = "主持人："+ n_tue[index];
-    } else if (day === 3) { 
-        document.getElementById("display-show").innerText = '《'+ wen[index]+ '》';
-        if (n_sun[index]=== "")
-            document.getElementById("display-host").innerText = n_wen[index];
-        else
-            document.getElementById("display-host").innerText = "主持人："+ n_wen[index];
-    } else if (day === 4) { 
-        document.getElementById("display-show").innerText = '《'+ thu[index]+ '》';
-        if (n_sun[index]=== "")
-            document.getElementById("display-host").innerText = n_thu[index];
-        else
-            document.getElementById("display-host").innerText = "主持人："+ n_thu[index];
-    } else if (day === 5) { 
-        document.getElementById("display-show").innerText = '《'+ fri[index]+ '》';
-        if (n_sun[index]=== "")
-            document.getElementById("display-host").innerText = n_fri[index];
-        else
-            document.getElementById("display-host").innerText = "主持人："+ n_fri[index];
-    } else if (day === 6) { 
-        document.getElementById("display-show").innerText = '《'+ sat[index]+ '》';
-        if (n_sun[index]=== "")
-            document.getElementById("display-host").innerText = n_sat[index];
-        else
-            document.getElementById("display-host").innerText = "主持人："+ n_sat[index];
-    }*/
-    /*console.log(index)*/
+
 }
 
 // 每分鐘更新一次顯示文字
