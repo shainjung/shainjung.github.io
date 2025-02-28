@@ -28,3 +28,16 @@ body{
 .BarFrame{
 	background-color: #dbd3d3;
 }
+.lastpage{
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	/* background-color: transparent; */
+	background-color: rgba(255, 255, 255, 0.4);
+	background-image: url(../images/last_page_2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+    border: none;
+}
