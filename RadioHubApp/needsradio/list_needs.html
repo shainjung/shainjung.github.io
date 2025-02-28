@@ -147,10 +147,39 @@
         </div>    
     </div>
     <button class="lastpage" onclick="goBack()"></button>    
-        <script>        
+        <script>    
+            const now = new Date();
+            const uctOffset = 0-now.getTimezoneOffset()/60;
+            console.log(uctOffset);    
+            function shiftArray(arr, n) {
+                const len = arr.length;
+                n = ((n % len) + len) % len; // 處理負數與超出範圍的 n
+                return arr.slice(n).concat(arr.slice(0, n));
+            }
+            function shiftObject(A, n) {
+                const keys = Object.keys(A);
+                const values = keys.map(key => A[key]); // 取得所有陣列
+                
+                const flatValues = values.flat(); // 將陣列攤平成一個
+                const shiftedValues = shiftArray(flatValues, n); // 進行位移
+                
+                const B = {};
+                let index = 0;
+                for (let key of keys) {
+                    B[key] = shiftedValues.slice(index, index + A[key].length);
+                    index += A[key].length;
+                }
+                return B;
+            }
             function updateSchedule(day) {
+                var n=uctOffset-8;
+                let schedule;
                 for (let i = 0; i < 24; i++) {
-                    const schedule = schedules[day];
+                    if(uctOffset != 8){
+                        schedule=shiftObject(schedules, n)[day];
+                    }else{
+                        schedule = schedules[day];
+                    }
                     const id = `text${i.toString().padStart(2, '0')}`;
                     const programName = schedule[i] || ""; // 取得節目名稱，預設為空字串
                     // 替換 '&' 或 '/' 為後接換行的版本
@@ -159,7 +188,7 @@
                     document.getElementById(id).innerHTML = formattedProgramName;
                 }
             }
-
+            
             var header = document.getElementById("WekSelect");
             var btns = header.getElementsByClassName("btn");
             
