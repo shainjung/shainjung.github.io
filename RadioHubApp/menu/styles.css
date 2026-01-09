@@ -1,0 +1,60 @@
+.selection_frame{
+    position: relative;
+    top: 50%; left: 50%;
+    width: 270px; height: 458px; 
+    margin: -232px 0 0 -138px;
+    border-style: dashed;
+    border-radius: 17px;
+}
+.inside_frame{
+    position: absolute;
+    /*background-color: blue;*/
+    top: 50%; left: 50%;
+    margin: -177px 0 0 -109px;
+}
+.menu_btn{
+    width: 212px;     height: 48px; 
+    margin: 14px 0px 14px 0px;
+    border-style: dashed;
+    border-radius: 9px;
+    text-align:center;
+    vertical-align: middle;
+
+}
+.btm_frame{
+    width: 270px;
+    height: 30px;
+    position: absolute;
+    left:50%;
+    bottom: 60px;
+    margin: -15px 0 0 -135px;
+}
+.m_btn_copyright {
+	width: 80px;
+	height: 30px;
+	position: absolute;
+	left: 0px; top: 0px;
+	background-image: url(../images/b_copyright.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.m_btn_private {
+	width: 80px;
+	height: 30px;
+	position: absolute;
+	right: 0px; top: 0px;
+	background-image: url(../images/b_private.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.lastpage{
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	background-image: url(../images/last_page.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+    border: none;
+}

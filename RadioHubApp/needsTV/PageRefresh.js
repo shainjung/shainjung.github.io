@@ -30,7 +30,7 @@ function Refresh(day,index){
     while( showInfo[i][0] != show ){
         i++;
     }
-    document.getElementById("display-info").innerText+=showInfo[i][1];
+    document.getElementById("display-info").innerText=showInfo[i][1];
     console.log(i);
     console.log(show);
     console.log(showInfo[i][0]);

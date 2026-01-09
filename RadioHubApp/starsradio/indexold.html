@@ -1,0 +1,77 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Stars Radio</title>
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="../page_styles.css">
+  <link rel="stylesheet" href="style_s.css">
+  <script src="../common/list/starslist.js"></script>
+
+</head>
+
+<body>
+
+
+    <div class="backgroundcolor"></div>
+    <div class=btnFrame_top>
+      <a href="../needsradio/index.html">
+        <div class="btn_needs"></div>
+      </a>
+      <a href="../starsradio/index.html">
+        <div class="btn_stars"></div>
+      </a>
+      <a href="../bbradio/index.html">
+        <div class="btn_bnb"></div>
+      </a>
+      <!--<a href="../needsTV/index.html">-->
+      <a href="../common/webprepar.html">
+        <div class="btn_tv"></div>
+      </a>   
+    </div>
+    
+    <div class="frame">
+      <img class="keycard" id="display-keycard" src="../images/keycard.png">
+      <div class="text_frame">
+        <div class="tx_playnow" id="display-text">現正播放</div>
+        <div class="tx_showname" id="display-show"></div>
+        <div class="tx_host" id="display-host"></div>
+
+      <script src="../PageRefresh.js"></script>
+      <div id="playPauseButton" class="btn_play"></div>
+  </div>
+  </div>
+  <div class=btnFrame_buttom>
+    <a href="menu.html">
+      <div class="btn_menu"></div>
+    </a>
+    <a href="news.html">
+      <div class="btn_news"></div>
+    </a>
+    <a href="list_stars.html">
+      <div class="btn_list"></div>
+    </a>
+    <a href="../common/donate.html?style=style_s">
+      <div class="btn_donate"></div>
+    </a>
+  </div>
+  <script>
+    // get URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const isPlaying = urlParams.get('isPlaying');
+
+    // ge button element
+    const playPauseButton = document.getElementById('playPauseButton');
+
+    // show button by URL parameters
+    if (isPlaying === 'false') {
+      playPauseButton.innerHTML = '<a href="./index.html?isPlaying=true"><div><img src="..\\images\\b_play.png" class="play_buttom"/></div></a>'
+    } else {
+      playPauseButton.innerHTML = '<a href="./index.html?isPlaying=false"><div><img src="..\\images\\b_pause.png" class="play_buttom"/></div></a>'
+    }
+    </script>
+</body>
+
+</html>

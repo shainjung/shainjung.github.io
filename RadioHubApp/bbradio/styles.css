@@ -1,0 +1,210 @@
+/*.e2011_11 {
+	width: 100vw;
+	height: 100vw;
+	position: absolute;
+	left: 0vw;
+	top: 0vw;
+}
+
+.e2013_34 {
+	width: 100vw;
+	height: 100vw;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}*/
+
+.e1_112 {
+	background-image: linear-gradient(0deg, rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 0) 0%, rgba(227.28947013616562, 184.34210747480392, 174.4999971985817, 0.44736841320991516) 28.00000011920929%, rgba(240.00000089406967, 144.00000661611557, 122.00000032782555, 1) 56.99999928474426%, rgba(196.3964894413948, 99.40273448824883, 75.15425965189934, 1) 75.49999952316284%);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+}
+
+.b_logo {
+	width: 212px;
+	height: 67px;
+	position: absolute;
+	left: 50%;
+  	transform: translate(-50%,0%);
+	top: 110px;
+	background-image: url(../images/logo.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.b_keycard {
+	width: 212px;
+	height: 212px;
+	position: absolute;
+	left: 50%;
+  	transform: translate(-50%,0%);
+	top: 209px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*===================== button ==========================*/
+.b_btnFrame_top {
+	width: 100%;
+	height: 40px;
+	position: fixed;
+	left: 0px;
+	top: 32px;
+}
+
+.b_btn_needs {
+	width: 56px;
+	height: 40px;
+	position: absolute;
+	left: 11%;
+	top: 0px;
+	background-image: url(../images/b_needs.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.b_btn_stars {
+	width: 56px;
+	height: 40px;
+	position: absolute;
+	left: 33%;
+	top: 0px;
+	background-image: url(../images/b_stars.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.b_btn_bnb {
+	width: 56px;
+	height: 40px;
+	position: absolute;
+	left: 55%;
+	top: 0px;
+	background-image: url(../images/b_bnb.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.b_btn_tv {
+	width: 56px;
+	height: 40px;
+	position: absolute;
+	left: 77%;
+	top: 0px;
+	background-image: url(../images/b_tv.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*--------------------------------------------------*/
+.b_btnFrame_buttom {
+	width: 100%;
+	height: 40px;
+	position: fixed;
+	left: 0px;
+	bottom: 32px;
+}
+.b_btn_menu {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 11%;
+	top: 0px;
+	background-image: url(../images/b_menu.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.b_btn_news {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 33%;
+	top: 0px;
+	background-image: url(../images/b_news.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.b_btn_list {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 55%;
+	top: 0px;
+	background-image: url(../images/b_list.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.b_btn_donate {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 77%;
+	top: 0px;
+	background-image: url(../images/b_donate.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*=================== text ========================*/
+.text_frame{
+	width: 212px;
+	height: 80px;
+	position: absolute;
+	left: 50%;
+	top: 500px;
+	transform: translate(-50%,0%);
+}
+.tx_playnow {
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+	color: rgba(0, 0, 0, 1);
+	width: 78px;
+	height: 33px;
+	position: relative;
+	top:0px;
+	left: 0px;
+	font-family: Inter;
+	text-align: left;
+	font-size: 12px;
+	letter-spacing: 0;
+	background-size: cover;
+}
+.tx_showname {
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+	color: rgba(0, 0, 0, 1);
+	width: 360px;
+	height: 69px;
+	position: absolute;
+	left: 50%;
+	top: 22px;
+	transform: translate(-50%,0%);
+	font-family: Inter;
+	text-align: center;
+	font-size: 1.6rem;
+	letter-spacing: 0;
+}
+.tx_host {
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+	color: rgba(0, 0, 0, 1);
+	width: 200px;
+	height: 21px;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+
+	font-family: Inter;
+	text-align: right;
+	font-size: 1rem;
+	letter-spacing: 0;
+}
+
+.btn_play {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 50%;
+  	transform: translate(-50%,0%);
+	top: 622px;
+}
