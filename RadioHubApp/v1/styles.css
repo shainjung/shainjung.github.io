@@ -1,0 +1,79 @@
+.logo {
+	width: 240px;
+	height: 79.5px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+	top: 12rem;
+	background-image: url(images/home/needsmediaf_1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.btnFrame {
+	width: 210px;
+	height: 172px;
+	position: absolute;
+	left: 50%; top: 19.5rem;
+	margin: 0px 0px 0px -105px;
+}
+.H_btn_needs,.H_btn_stars,.H_btn_bnb,.H_btn_tv {
+	width: 100%;
+	height: 72.32px;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%,0);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 0.5rem;
+	border-radius: 10px;
+}
+
+.H_btn_needs {
+	background-image: url(images/home/h_4n.png);
+}
+
+.H_btn_stars {
+	background-image: url(images/home/h_4s.png);
+}
+
+.H_btn_bnb {
+	background-image: url(images/home/h_4b.png);
+}
+
+.H_btn_tv {
+	background-image: url(images/home/h_4t.png);
+}
+
+.version {
+	font-size: 8px; /* 調整字體大小 */
+	opacity: 0.5; /* 調整文字透明度 */
+	position: absolute; /* 絕對定位 */
+	bottom: 5px; /* 距離底部的距離 */
+	left: 55%; /* 距離右側的距離 */
+	transform: translate(-50%,0);
+	text-align: center;
+}
+
+.text1 {
+	width: 232px;
+	height: 30px;
+	position: absolute;
+	top: 6rem;
+	left: 50%;
+	transform: translate(-50%,0);
+	background-image: url(images/home/h_text_up.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.text2 {
+	width: 232px;
+	height: 20px;
+	position: absolute;
+	bottom: 5rem;
+	left: 50%;
+	transform: translate(-50%,0);
+	background-image: url(images/home/h_text_down.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}

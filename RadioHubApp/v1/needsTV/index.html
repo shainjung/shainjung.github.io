@@ -1,0 +1,72 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>needs TV</title>
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="style_TV.css">
+  <script src="../common/list/tvlist.js"></script>
+
+  <style>
+    /*
+                Figma Background for illustrative/preview purposes only.
+                You can remove this style tag with no consequence
+              */
+    body {
+      background: #E5E5E5;
+    }
+  </style>
+
+</head>
+
+<body>
+    <div class="backgroundcolor"></div>
+    <div class=btnFrame_top>
+      <a href="../needsradio/index.html">
+        <div class="btn_needs"></div>
+      </a>
+      <a href="../starsradio/index.html">
+        <div class="btn_stars"></div>
+      </a>
+      <a href="../bbradio/index.html">
+        <div class="btn_bnb"></div>
+      </a>
+      <a href="../needsTV/index.html">
+        <div class="btn_tv"></div>
+      </a>   
+    </div>
+
+    <div class="frame">   
+
+      <iframe class="player" src="https://crs.ccdntech.com/rds/playerh7livecdn?vod280_Live/needstv&cname&hls&autostart" allowfullscreen></iframe>
+
+      <div class="text_frame">
+        <!-- <div class="tx_playnow">現正播放</div> -->
+        <div class="tx_showname" id="display-show"></div>
+        <div class="tx_introduction" id="display-info">節目簡介：<br></div>
+        <script src="PageRefresh.js"></script>
+        <div id="playPauseButton" class="btn_play"></div>
+      </div>
+      
+    </div>
+    </div>
+  <div class=btnFrame_buttom>
+    <a href="menu.html">
+      <div class="btn_menu"></div>
+    </a>
+    <!--<a href="https://www.needsradio.org.tw/joomla2/index.php">
+      <div class="btn_news"></div>
+    </a>-->
+    <a href="list_tv.html">
+      <div class="btn_list"></div>
+    </a>
+    <a href="../common/donate.html?style=style_tv">
+      <div class="btn_donate"></div>
+    </a>
+  </div>
+
+</body>
+
+</html>

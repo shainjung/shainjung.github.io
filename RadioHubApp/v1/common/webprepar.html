@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>In preparation</title>
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style_tv.css">
+  <style>
+    .box{
+      position: relative;
+      top:30%;
+
+    }
+    .tvimg{
+      width: 72px;
+			height: 60px;
+			position: relative;
+			margin: 10% 0 2% 0;
+			left: 50%;
+			transform: translate(-50%,0%);
+			background-repeat: no-repeat;
+			background-size: contain;
+			border: 0; outline: none;
+      background-image: url(../images/img_tv.png);
+    }
+    .text{
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+    <div class="box">
+      <div class="tvimg"></div>
+      <div class="text">籌備中<br>敬請期待</div>
+    </div>
+    <button class="lastpage" onclick="goBack()"></button>
+  
+    <script>
+      function goBack() {
+      window.history.back();
+    }
+    </script>
+</body>
+
+</html>

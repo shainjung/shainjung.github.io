@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"></meta> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../common/style_list.css"/>
+        <link rel="stylesheet" href="../common/style_tv.css"/>
+        <script src="../common/list/tvlist.js"></script>
+        <title>needs TV program list</title>
+        <style>
+            body{
+                background: white;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="WekSelect" class="scrollmenu">
+            <button class="btn" id="btn1" onclick="updateSchedule('l_mon')">週一</button>
+            <button class="btn" id="btn2" onclick="updateSchedule('l_tue')">週二</button>
+            <button class="btn" id="btn3" onclick="updateSchedule('l_wen')">週三</button>
+            <button class="btn" id="btn4" onclick="updateSchedule('l_thu')">週四</button>
+            <button class="btn" id="btn5" onclick="updateSchedule('l_fri')">週五</button>
+            <button class="btn" id="btn6" onclick="updateSchedule('l_sat')">週六</button>
+            <button class="btn" id="btn0" onclick="updateSchedule('l_sun')">週日</button>
+        </div>
+        <div class="frame" id="schedule">  
+        <div class="BarFrame">
+            <div class="Time" >00:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text00"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >01:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text01"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >02:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text02"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >03:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text03"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >04:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text04"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >05:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text05"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >06:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text06"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >07:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text07"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >08:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text08"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >09:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text09"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >10:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text10"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >11:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text11"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >12:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text12"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >13:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text13"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >14:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text14"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >15:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text15"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >16:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text16"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >17:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text17"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >18:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text18"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >19:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text19"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >20:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text20"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >21:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text21"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >22:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text22"></div>
+        </div>
+        <div class="BarFrame">
+            <div class="Time" >23:00</div>
+            <div class="Line"></div>
+            <div class="Text" id="text23"></div>
+        </div>    
+    </div>
+    <button class="lastpage" onclick="goBack()"></button>    
+        <script>        
+            function updateSchedule(day) {
+                for (let i = 0; i < 24; i++) {
+                    const schedule = schedules[day];
+                    const id = `text${i.toString().padStart(2, '0')}`;
+                    const programName = schedule[i] || ""; // 取得節目名稱，預設為空字串
+                    // 替換 '&' 或 '/' 為後接換行的版本
+                    const formattedProgramName = programName.replace(/(&|\/)/g, "$1<br>");
+                    // 更新內容，允許換行
+                    document.getElementById(id).innerHTML = formattedProgramName;
+                }
+            }
+
+            var header = document.getElementById("WekSelect");
+            var btns = header.getElementsByClassName("btn");
+            
+            const today = new Date();
+            const week = today.getDay();
+            const label = ["sun", "mon", "tue", "wen", "thu", "fri", "sat"];
+            
+            updateSchedule("l_"+ label[week]);
+            document.getElementById("btn"+week).classList.add("active");
+            window.onload = function () {
+                header.scrollLeft =(header.scrollWidth - header.clientWidth) * week /7; // 滾動到對應的按鈕位置
+            };
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function() {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+            });
+          }
+        </script>
+        <script>
+            function goBack() {
+            window.history.back();
+          }
+        </script>
+    </body>
+</html>
